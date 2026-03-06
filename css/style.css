@@ -1,10 +1,17 @@
+:root{
+    --nav_menu_pos: -0vh;
+}
+
 body{
     background-color: darkgray;
+    display: flex;
 }
 
 header{
     background-color: white;
     height: 20vh;
+    position: relative;
+    z-index: 2;
 }
 
 header img{
@@ -14,11 +21,16 @@ header img{
     margin-top: 5vh;
     margin-left: 50%;
     transform: translate(-50%);
+    z-index: 2;
+    position: relative;
 }
 
 nav{
     background-color: rgb(240, 0, 0);
     height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav img{
@@ -28,6 +40,20 @@ nav img{
     margin-right: 50%;
     transform: translate(-50%, -50%);
     filter: invert();
+    position: relative;
+    z-index: 2;
+}
+
+#nav_sec{
+    z-index: 1;
+    background-color: brown;
+    height: 60vh;
+    width: 40vw;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: sticky;
+    margin-top: var(--nav_menu_pos);
+    transition: margin-top 0.5s ease-in-out;
 }
 
 #sec1{
@@ -47,7 +73,7 @@ nav img{
 
 #sec1 p{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 50%;                           /*Denna koden fick jag från chatGPT*/
     left: 50%;                          /*Denna koden fick jag från chatGPT*/
     transform: translate(-50%, -95%);   /*Denna koden fick jag från chatGPT, men jag anpassade värdena själv*/
