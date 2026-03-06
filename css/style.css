@@ -54,7 +54,11 @@ nav img{
     position: sticky;
     margin-top: var(--nav_menu_pos);
     transition: margin-top 0.5s ease-in-out;
+
+    display: grid;
+    justify-content: space-evenly;
 }
+
 
 #sec1{
     background-color: grey;
