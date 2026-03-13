@@ -106,6 +106,7 @@ nav img{
     color: white;
     width: fit-content;
     padding: var(--smaller_padding_val);
+    border-radius: 2px 2px 6px 6px;
 }
 
 footer{
