@@ -1,5 +1,8 @@
 :root{
     --nav_menu_pos: -60vh;
+    --padding_val: 0.5em;
+    --smaller_padding_val: 0.2em;
+    --font_family: Tahoma, sans-serif;
 }
 
 body{
@@ -31,6 +34,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 2;
+    box-shadow: 0px 0.5em 7px rgba(0, 0, 0, 0.226);
 }
 
 nav img{
@@ -88,14 +92,25 @@ nav img{
 }
 
 #sec2{
-    background-color: bisque;
+    background-color: white;
     height: auto;
     width: 70vw;
     margin: auto;
+    padding: var(--padding_val);
+    font-family: var(--font_family);
+    
+}
+
+#sec2 article h3{
+    background-color: rgb(240, 0, 0);
+    color: white;
+    width: fit-content;
+    padding: var(--smaller_padding_val);
 }
 
 footer{
-    background-color: brown;
+    background-color: rgb(66, 66, 66);
     height: 50vh;
+    color: white;
 }
 
