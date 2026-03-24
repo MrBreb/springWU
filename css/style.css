@@ -156,14 +156,4 @@ nav {
     border-radius: 2px 2px 6px 6px;
 }
 
-footer{
-    background-color: rgb(66, 66, 66);
-    height: 50vh;
-    color: white;
-    box-shadow: var(--box_shadow_footer);
-    
-}
 
-#footer_follow_sec img{
-    width: 20px;
-}
