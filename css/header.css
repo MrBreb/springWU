@@ -1,0 +1,17 @@
+header{
+    background-color: var(--foreground_colour);
+    height: 15vh;
+    position: relative;
+    z-index: 2;
+}
+
+header img{
+    width: 80%;
+    height: 50%;
+    object-fit: contain;
+    margin-top: 4vh;
+    margin-left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    position: relative;
+}

@@ -1,5 +1,5 @@
-.section_link {
-    text-decoration: none; /* Tar bort understrykning */
+.footer_link {
+    text-decoration: none;
     color: inherit;
 }
 
@@ -14,7 +14,7 @@ footer{
 
 #footer_follow_sec{
     grid-area: f;  
-    padding-left: 2em;
+    padding-left: 0.5em;
 }
 #footer_contact_sec{
     grid-area: k;
@@ -25,7 +25,7 @@ footer{
     align-items: center;
     gap: 10px;
     padding: 0.5em;
-    margin-right: 2em;
+    margin-right: 1em;
     border-bottom: solid rgb(50, 50, 50);
     border-radius: 0px 0px 15px 15px;
 }
@@ -35,8 +35,39 @@ footer{
     border-radius: 7px;
 }
 
+#telefone_sec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5em;
+    margin-right: 2em;
+    border-bottom: solid rgb(50, 50, 50);
+    border-radius: 0px 0px 15px 15px;
+    width: 45vw;
+}
+
+#mail_sec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5em;
+    margin-right: 2em;
+    border-bottom: solid rgb(50, 50, 50);
+    border-radius: 0px 0px 15px 15px;
+    width: 45vw;
+    overflow-wrap: anywhere;
+}
+
 #footer_contact_sec img{
     width: 45px;
     border-radius: 7px;
+    filter: invert();
 }
 
+footer > section > p{
+    margin-left: 0.5em;
+}
+
+p{
+    font-family: var(--font_family);
+}

@@ -21,93 +21,6 @@ body{
     width: 100%;
 }
 
-header{
-    background-color: var(--foreground_colour);
-    height: 15vh;
-    position: relative;
-    z-index: 2;
-}
-
-header img{
-    width: 80%;
-    height: 50%;
-    object-fit: contain;
-    margin-top: 4vh;
-    margin-left: 50%;
-    transform: translate(-50%);
-    z-index: 2;
-    position: relative;
-}
-/*
-nav{
-    background-color: rgb(240, 0, 0);
-    height: 67vh;
-    width: 40vw;
-    margin-left: 50%;
-    transform: translate(-50%);
-    position: sticky;
-    top: -59vh;
-    margin-top: var(--nav_menu_pos);
-    z-index: 1;
-    box-shadow: var(--box_shadow);
-    border-radius: 0px 0px 20px 20px;
-    transition: margin-top 0.5s ease-in-out;
-}
-
-nav img{
-    height: 10%;
-    width: 40%;
-    margin-top: 63vh;
-    margin-left: 50%;
-    margin-right: 50%;
-    transform: translate(-50%, -50%);
-    filter: invert();
-    position: relative;
-    z-index: 1;
-}
-*/
-
-nav {
-    position: sticky;
-    top: 0vh; 
-    width: 100%;
-    height: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-}
-
-
-/*Idéen att separera nav och nav content fick jag av Gemini. Men koden skrev jag själv*/
-#nav_content { 
-    background-color: var(--accent_colour);
-    height: 67vh;
-    width: 60vw;
-    position: absolute; 
-    top: var(--nav_menu_pos);
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: var(--box_shadow);
-    transition: top 0.5s ease-in-out;
-    z-index: 1;
-}
-
-#nav_homepage_link img {
-    height: 10vh;
-}
-
-
-#nav_button {
-    height: 15%;
-    position: absolute;
-    bottom: -5px; 
-    left: 50%;
-    transform: translateX(-50%);
-    filter: invert();
-    cursor: pointer;
-    z-index: 1;
-}
-
 #sec1{
     height: 75vh;
     width: 100%;
@@ -150,7 +63,7 @@ nav {
 
 #sec2 article h3{
     background-color: var(--accent_colour);
-    color: white;
+    color: rgb(255, 255, 255);
     width: fit-content;
     padding: var(--smaller_padding_val);
     border-radius: 2px 2px 6px 6px;
