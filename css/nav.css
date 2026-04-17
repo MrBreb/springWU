@@ -1,3 +1,7 @@
+:root{
+    --nav_menu_pos: -76vh;
+}
+
 nav {
     position: sticky;
     top: 0vh; 
@@ -23,16 +27,16 @@ nav {
 /*Idéen att separera nav och nav content fick jag av Gemini. Men koden skrev jag själv*/
 #nav_content { 
     background-color: var(--accent_colour);
-    height: 67vh;
+    height: 85vh;
     width: 60vw;
     position: absolute; 
-    /*top: var(--nav_menu_pos);*/
+    top: var(--nav_menu_pos);
     border-radius: 0px 0px 20px 20px;
     box-shadow: var(--box_shadow);
     transition: top 0.5s ease-in-out;
     z-index: 1;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
 }
 
 
@@ -42,24 +46,13 @@ nav {
     filter: invert();
 }
 
-#nav_homepage_link{
+.nav_hyperlinks{
     grid-row: 1;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 0.5em;
-    margin: 1em;
-    border-bottom: solid rgb(113, 212, 255);
-    border-radius: 0px 0px 15px 15px;
-}
-
-#nav_log_in_link{
-    grid-row: 2;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0.5em;
-    margin: 1em;
+    margin: 0.5em;
     border-bottom: solid rgb(113, 212, 255);
     border-radius: 0px 0px 15px 15px;
 }
@@ -69,5 +62,4 @@ nav {
 .nav_link{
     text-decoration: none;
     color: white;
-    font-family: var(--font_family);
 }

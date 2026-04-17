@@ -1,5 +1,5 @@
 :root{
-    --nav_menu_pos: -58vh;
+    --nav_menu_pos: -83vh;
     --padding_val: 0.5em;
     --smaller_padding_val: 0.2em;
     --font_family: Tahoma, sans-serif;
@@ -68,5 +68,3 @@ body{
     padding: var(--smaller_padding_val);
     border-radius: 2px 2px 6px 6px;
 }
-
-

@@ -61,6 +61,9 @@ footer{
 #footer_contact_sec img{
     width: 45px;
     border-radius: 7px;
+}
+
+#telefone_sec img{
     filter: invert();
 }
 
