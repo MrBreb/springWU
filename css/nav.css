@@ -1,7 +1,3 @@
-:root{
-    --nav_menu_pos: -76vh;
-}
-
 nav {
     position: sticky;
     top: 0vh; 
@@ -27,7 +23,7 @@ nav {
 /*Idéen att separera nav och nav content fick jag av Gemini. Men koden skrev jag själv*/
 #nav_content { 
     background-color: var(--accent_colour);
-    height: 85vh;
+    height: 75vh;
     width: 60vw;
     position: absolute; 
     top: var(--nav_menu_pos);
@@ -62,4 +58,13 @@ nav {
 .nav_link{
     text-decoration: none;
     color: white;
+}
+
+#shadow_behind_nav{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, var(--see_through_val));
+    height: 100vh;
+    width: 100vw;
+    transition: background-color 0.5s ease-in-out;
 }
