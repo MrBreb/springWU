@@ -6,7 +6,7 @@ nav_button.addEventListener('click', () => {
     const currentPos = getComputedStyle(document.documentElement).getPropertyValue('--nav_menu_pos').trim(); /*Denna koden fick jag från Gemini, men resten av koden skrev jag själv*/
 
     if (currentPos === '0vh'){
-        document.documentElement.style.setProperty('--nav_menu_pos', '-76vh');
+        document.documentElement.style.setProperty('--nav_menu_pos', '-66vh');
         document.documentElement.style.setProperty('--see_through_val', '0');
     } else {
         document.documentElement.style.setProperty('--nav_menu_pos', '0vh');
