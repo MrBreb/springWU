@@ -1,17 +1,117 @@
-header{
-    background-color: var(--foreground_colour);
-    height: 15vh;
-    position: relative;
-    z-index: 2;
+@media only screen and (max-width: 500px){
+    header img{
+        width: 80%;
+        height: 50%;
+        object-fit: contain;
+        margin-top: 4vh;
+        margin-left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+        position: relative;
+    }
+
+    header{
+        background-color: var(--foreground_colour);
+        height: 15vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    #header_content img {
+        display: none;
+    }
+
+    .header_hyperlinks p{
+        display: none;
+    }
 }
 
-header img{
-    width: 80%;
-    height: 50%;
-    object-fit: contain;
-    margin-top: 4vh;
-    margin-left: 50%;
-    transform: translate(-50%);
-    z-index: 2;
-    position: relative;
+@media only screen and (min-width: 501px) and (max-width: 1200px){
+    header img{
+        height: 50%;
+        z-index: 2;
+        position: relative;
+        margin: 3vw;
+        align-self: center;
+    }
+
+    header{
+        background-color: var(--foreground_colour);
+        height: 15vh;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header_content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 5vw;
+    }
+
+    #header_content section{
+        height: 10vh;
+        display: flex;
+    }
+
+    #header_content img {
+        height: 5vh;
+    }
+
+    .header_hyperlinks p{
+        display: none;
+    }
+
+    .header_link_border_sec{
+        border-left: solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    header img{
+        height: 50%;
+        z-index: 2;
+        position: relative;
+        margin: 3vw;
+        align-self: center;
+    }
+
+    header{
+        background-color: var(--foreground_colour);
+        height: 15vh;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header_content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3vw;
+        margin-right: 3vw;
+    }
+
+    #header_content section{
+        height: 10vh;
+        display: flex;
+    }
+
+    #header_content img {
+        height: 5vh;
+    }
+
+    .header_hyperlinks p{
+        font-family: var(--font_family);
+        font-size: large;
+        font-weight: bold;
+        color:  var(--black_text_color);
+    }
+
+    .header_link_border_sec{
+        border-left: solid rgba(0, 0, 0, 0.1);
+    }
 }
