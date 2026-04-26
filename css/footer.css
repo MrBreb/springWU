@@ -10,6 +10,7 @@ footer{
     box-shadow: var(--box_shadow_footer);
     display: grid;
     grid-template-areas: "f f k";
+    position: relative; 
 }
 
 #footer_follow_sec{
