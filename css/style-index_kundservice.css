@@ -1,30 +1,171 @@
-#image_sec{
-    height: 75vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    box-shadow: var(--box_shadow);
-    z-index: 0;
-    margin-top: -9vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h2{
+    color: var(--black_text_color);
+    font-family: var(--font_family);
 }
 
-#image_sec img{
-    filter: brightness(60%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media only screen and (max-width: 1200px){
+    #image_sec{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--box_shadow);
+        z-index: 0;
+        margin-top: -9vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #image_sec img{
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #image_sec p{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    #customer_service_sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero_sec{
+        background-color: var(--foreground_colour);
+        width: 85vw;
+        padding: 5vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #quick_select_sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5vh 0;
+    }
+
+    .customer_service_sec_link{
+        color: var(--black_text_color);
+        font-weight: bold;
+        border: solid var(--accent_colour) 3px;
+        border-radius: 5px;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--box_shadow);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+
+    .customer_service_sec_link:hover{
+        background-color: rgb(120, 202, 237);
+        box-shadow: 0px 0.2em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+        
+    }
+
+    #report_damage_sec{
+        background-color: var(--foreground_colour);
+        width: 85vw;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: dotted rgb(239, 239, 239);
+    }
+    #report_damage_sec p{
+        text-align: center;
+        padding: 0 5vw;
+    }
+
+    #my_pages_sec{
+        background-color: var(--foreground_colour);
+        width: 85vw;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: dotted rgb(239, 239, 239);
+    }
+    #my_pages_sec p{
+        text-align: center;
+        padding: 0 5vw;
+    }
+
+    #insurance_check_sec{
+        background-color: var(--foreground_colour);
+        width: 85vw;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: dotted rgb(239, 239, 239);
+    }
+    #insurance_check_sec p{
+        text-align: center;
+        padding: 0 5vw;
+    }
+
 }
 
-#image_sec p{
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 2.5em;
+@media only screen and (min-width: 1201px){
+    #custumer_service_sec{
+        display: grid;
+        grid-template-areas: 
+        "I I I Hs Hs"
+        "I I I Hs Hs"
+        "I I I Hs Hs"
+        "I I I Hs Hs"
+        "I I I Hs Hs";
+        gap: 20px;
+    }
+
+    #image_sec{
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        display: grid;
+        grid-area: I;
+    }
+
+    #hero_sec{
+        display: grid;
+        grid-area: Hs;
+    }
+    
+    #image_sec img{
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #image_sec p{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+    }    
 }
+
+
 

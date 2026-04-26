@@ -1,18 +1,93 @@
-#image_sec{
-    height: 75vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    box-shadow: var(--box_shadow);
-    z-index: 0;
-    margin-top: -9vh;
-    display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 550px){
+    #image_sec{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--box_shadow);
+        z-index: 0;
+        margin-top: -9vh;
+        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        align-items: center;
+        justify-content: center;
+    }
+
+    #text_sec{
+        background-color: var(--foreground_colour);
+        height: auto;
+        width: 85vw;
+        margin: auto;
+        padding: var(--padding_val);
+        font-family: var(--font_family);
+
+    }
 }
 
-#image_sec img{
+@media only screen and (min-width: 551px) and (max-width: 800px){
+    #image_sec{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--box_shadow);
+        z-index: 0;
+        margin-top: -9vh;
+        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        align-items: center;
+        justify-content: center;
+    }
     
+    #text_sec{
+        background-color: var(--foreground_colour);
+        height: auto;
+        width: 85vw;
+        margin: auto;
+        padding: var(--padding_val);
+        font-family: var(--font_family);
+    
+    }
+}
+
+@media only screen and (min-width: 801px){
+
+    #home_page_sec{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #text_sec{
+        background-color: var(--foreground_colour);
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding: var(--padding_val);
+        font-family: var(--font_family);
+    }
+
+    #paragraf_sec_1{
+    }
+
+    #image_sec{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#text_sec article h3{
+    background-color: var(--accent_colour);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: var(--smaller_padding_val);
+    border-radius: 2px 6px 6px 6px;
+}    
+
+#image_sec img{
     filter: brightness(60%);
     width: 100%;
     height: 100%;
@@ -27,22 +102,4 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 2.5em;
-}
-
-#sec2{
-    background-color: var(--foreground_colour);
-    height: auto;
-    width: 85vw;
-    margin: auto;
-    padding: var(--padding_val);
-    font-family: var(--font_family);
-    
-}
-
-#sec2 article h3{
-    background-color: var(--accent_colour);
-    color: rgb(255, 255, 255);
-    width: fit-content;
-    padding: var(--smaller_padding_val);
-    border-radius: 2px 6px 6px 6px;
 }

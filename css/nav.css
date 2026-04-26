@@ -66,6 +66,7 @@
     #shadow_behind_nav{
         position: fixed;
         top: 0;
+        display: none;
         background-color: rgba(0, 0, 0, var(--see_through_val));
         height: 100vh;
         width: 100vw;
