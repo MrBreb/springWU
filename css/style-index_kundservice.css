@@ -77,6 +77,12 @@ h2{
         
     }
 
+    .customer_service_sec_link:active{
+        background-color: rgb(67, 185, 235);
+        box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+
     #report_damage_sec{
         background-color: var(--foreground_colour);
         width: 85vw;
@@ -120,6 +126,63 @@ h2{
     #insurance_check_sec p{
         text-align: center;
         padding: 0 5vw;
+    }
+
+    #common_questions_sec{
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border-top: dotted rgb(239, 239, 239);
+        background-color: var(--foreground_colour);
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+    summary{
+        color: var(--black_text_color);
+        font-weight: bold;
+        border: solid var(--accent_colour) 3px;
+        border-radius: 5px;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: var(--box_shadow);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    summary:hover{
+        background-color: rgb(120, 202, 237);
+        box-shadow: 0px 0.2em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    summary:active{
+        background-color: rgb(67, 185, 235);
+        box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    summary p{
+        padding: 0 2vw;
+    }
+    details{
+        width: 60vw;
+    }
+    .details_text {
+        margin-top: 10px;
+        padding: 15px 2vw;
+        border-left: 4px solid var(--accent_colour); 
+        background-color: rgba(0, 0, 0, 0.02); 
+    }
+    
+    summary::after { /*summary::after och details[open] summary::after Fick jag från Gemini*/
+        content: '❯';
+        display: inline-block;
+        padding-right: 2vw;
+        transition: transform 0.3s ease;
+        color: var(--accent_colour);
+    }
+    details[open] summary::after {
+        transform: rotate(90deg);
     }
 
 }
@@ -167,5 +230,7 @@ h2{
     }    
 }
 
-
+summary {
+    list-style: none;
+}
 
