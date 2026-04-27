@@ -19,7 +19,21 @@
         margin: auto;
         padding: var(--padding_val);
         font-family: var(--font_family);
+    }
 
+    #paragraf_sec_1{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #paragraf_sec_2{
+        border-top: dashed rgb(239, 239, 239);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #paragraf_sec_3{
+        border-top: dashed rgb(239, 239, 239);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 }
 
