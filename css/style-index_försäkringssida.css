@@ -1,0 +1,111 @@
+@media only screen and (max-width: 550px){
+    #image_sec{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--box_shadow);
+        z-index: 0;
+        margin-top: -9vh;
+        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        align-items: center;
+        justify-content: center;
+    }
+
+    #insurance_sec{
+        width: 85vw;
+        background-color: var(--foreground_colour);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .insurance_hyperlink{
+        padding: 0 2vw;
+        background-color: var(--foreground_colour);
+        margin-top: 5vh;
+        color: var(--black_text_color);
+        font-weight: bold;
+        border: solid var(--accent_colour) 3px;
+        border-radius: 5px;
+        width: fit-content;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--box_shadow);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    .insurance_hyperlink:hover{
+        background-color: rgb(120, 202, 237);
+        box-shadow: 0px 0.2em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    .insurance_hyperlink:active{
+        background-color: rgb(67, 185, 235);
+        box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+
+    #car_insurance{
+        padding: 5vh 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #house_insurance{
+        border-top: dotted rgb(239, 239, 239);
+        margin-top: 4vh;
+        padding: 5vh 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #life_insurance{
+        border-top: dotted rgb(239, 239, 239);
+        margin-top: 4vh;
+        padding: 5vh 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #other_vehicle_insurances{
+        border-top: dotted rgb(239, 239, 239);
+        margin-top: 4vh;
+        padding: 5vh 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #animal_insurance{
+        border-top: dotted rgb(239, 239, 239);
+        margin-top: 4vh;
+        margin-bottom: 10vh;
+        padding: 5vh 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}  
+
+h3{
+    text-align: center;
+    font-family: var(--font_family);
+}
+
+#image_sec img{
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#image_sec p{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+}
