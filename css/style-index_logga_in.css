@@ -23,14 +23,16 @@ h2{
         align-items: center;
     }
     #BankID_and_text_sec h2{
-        text-align: center;
-
+        text-align: center; 
+        font-size: 2em;
     }
     #BankID_and_text_sec h3{
         color: var(--black_text_color);
         font-family: var(--font_family);
         text-align: center;
-        padding-bottom: 4vh;
+        font-size: 1em;
+        padding-bottom: 5vh;
+        margin-top: -0.5vh;
     }
 
     #BankID_sec{
@@ -158,10 +160,6 @@ h2{
         box-shadow: 0px 0.1em 7px rgba(0, 0, 0, 0.226) inset;
         transition: box-shadow ease 0.2s;
     }
-    #log_in_with_mail section{
-        padding-top: 2vh;
-        border-top: dashed rgb(239, 239, 239);
-    }
 
     #log_in_with_mail_buttons_sec{
         display: flex;
@@ -176,7 +174,7 @@ h2{
         font-weight: bold;
         border: solid var(--accent_colour) 3px;
         border-radius: 5px;
-        height: 7.5vh;
+        height: fit-content;
         width: fit-content;
         display: flex;
         align-items: center;
@@ -428,22 +426,24 @@ h2{
 
     #sign_in{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         border-top: dashed rgb(239, 239, 239);
         margin-top: 3vh;
+        padding-top: 3vh;
+        gap: 10px;
     }
     #sign_in p{
         font-weight: bold;
     }
     #sign_in a{
         gap: 7vw;
-        padding: 0 4vw;
+        padding: 0 1vw;
         color: var(--black_text_color);
         font-weight: bold;
         border: solid var(--accent_colour) 3px;
         border-radius: 5px;
-        height: 5vh;
+        height: 7.5vh;
         width: fit-content;
         display: flex;
         align-items: center;
@@ -487,13 +487,15 @@ h2{
     }
     #BankID_and_text_sec h2{
         text-align: center;
-
+        font-size: 3em;
     }
     #BankID_and_text_sec h3{
         color: var(--black_text_color);
         font-family: var(--font_family);
         text-align: center;
-        margin-bottom: 10vh;
+        font-size: 1.2em;
+        padding-bottom: 5vh;
+        margin-top: -0.5vh;
     }
 
     #BankID_sec{
@@ -526,11 +528,11 @@ h2{
     }
 
     #manual_log_in{
-        padding-top: 5vh;
+        padding-top: 7vh;
         padding-bottom: 10vh;
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dashed rgb(239, 239, 239);
         background-color: var(--foreground_colour);
-        width: 85vw;
+        width: 45vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -548,7 +550,7 @@ h2{
         border: solid var(--accent_colour) 3px;
         border-radius: 5px;
         width: 325px;
-        height: 12.5vh;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -569,17 +571,17 @@ h2{
     #log_in_with_apple img{
         height: 10vh; 
         filter: invert();
-        margin-left: -15px;
+        margin-left: -16px; /*kompensation för att apple loggan är lite stygg och ocetrerad*/
     }
     #log_in_with_apple{
-        gap: 8vw;
+        gap: 7.8vw;         /*kompensation för att apple loggan är lite stygg och ocetrerad*/
         padding: 0 2vw;
         color: var(--black_text_color);
         font-weight: bold;
         border: solid var(--accent_colour) 3px;
         border-radius: 5px;
         width: 325px;
-        height: 12.5vh;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -599,6 +601,8 @@ h2{
     
     #log_in_with_mail{
         margin-top: 4vh;
+        padding-top: 6vh;
+        width: 45vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -607,7 +611,7 @@ h2{
         border-top: dashed rgb(239, 239, 239);
     }
     #log_in_with_mail input{
-        width: 60vw;
+        width: 30vw;
         padding: 2vh 3vw;
         font-size: 1em;
         border: 2px solid rgb(239, 239, 239);
@@ -622,19 +626,22 @@ h2{
         box-shadow: 0px 0.1em 7px rgba(0, 0, 0, 0.226) inset;
         transition: box-shadow ease 0.2s;
     }
-    #log_in_with_mail section{
-        padding-top: 2vh;
-        border-top: dashed rgb(239, 239, 239);
-    }
 
-    #log_in_with_mail a{
-        gap: 7vw;
-        padding: 0 4vw;
+    #log_in_with_mail_buttons_sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 75vw;
+        gap: 2vw;
+    }
+    #log_in_with_mail_buttons_sec a{
+        padding: 0 2vw;
         color: var(--black_text_color);
         font-weight: bold;
         border: solid var(--accent_colour) 3px;
         border-radius: 5px;
-        height: 5vh;
+        height: 7.5vh;
         width: fit-content;
         display: flex;
         align-items: center;
@@ -642,12 +649,12 @@ h2{
         box-shadow: var(--box_shadow);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
-    #log_in_with_mail a:hover{
+    #log_in_with_mail_buttons_sec a:hover{
         background-color: rgb(120, 202, 237);
         box-shadow: 0px 0.2em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
-    #log_in_with_mail a:active{
+    #log_in_with_mail_buttons_sec a:active{
         background-color: rgb(67, 185, 235);
         box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
@@ -655,22 +662,26 @@ h2{
 
     #sign_in{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
         border-top: dashed rgb(239, 239, 239);
         margin-top: 3vh;
+        padding-top: 3vh;
+        width: 45vw;
+        gap: 10px;
     }
     #sign_in p{
         font-weight: bold;
     }
     #sign_in a{
         gap: 7vw;
-        padding: 0 4vw;
+        padding: 0 2vw;
         color: var(--black_text_color);
         font-weight: bold;
         border: solid var(--accent_colour) 3px;
         border-radius: 5px;
-        height: 5vh;
+        height: 7.5vh;
         width: fit-content;
         display: flex;
         align-items: center;
