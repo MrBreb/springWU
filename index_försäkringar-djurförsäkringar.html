@@ -83,12 +83,11 @@
         <h2>Djurförsäkring</h2>
         <h3>Ge din bästa vän den vård den förtjänar</h3>
         <p>Priset på en djurförsäkring beror främst på djurets ras, ålder och var i landet ni bor. Innan du räknar ut priset får du välja vilken självrisk som passar din ekonomi bäst – en högre självrisk ger en lägre månadskostnad.</p>
-        <ul>
-            <li><p>Detta behöver du: Djurets namn, ras och födelsedatum (eller ungefärlig ålder).</p></li>
-            <li><p>Bonus: Som kund hos oss får du fria samtal till digital veterinär, så att du kan få råd direkt i mobilen vid enklare besvär.</p></li>
-        </ul>
-        <label for="animal_insurance"><p>Djurförsäkringar:</p></label>
-        <select name="animal_insurance" id="animal_insurance">
+        <p><b>Detta behöver du:</b> Djurets namn, ras och födelsedatum (eller ungefärlig ålder).</p>
+        <p><b>Bonus:</b> Som kund hos oss får du fria samtal till digital veterinär, så att du kan få råd direkt i mobilen vid enklare besvär.</p>
+        <label for="animal_insurance"><p><b>Djurförsäkringar:</b></p></label>
+        <section id="insurance_select_sec">
+          <select name="animal_insurance" id="insurance_select">
             <option value="Hundförsäkring">Hundförsäkring</option>
             <option value="Kattförsäkring">Kattförsäkring</option>
             <option value="Flockförsäkring">Flockförsäkring</option>
@@ -96,6 +95,7 @@
             <option value="Om ditt djur skadat sig">Om ditt djur skadat sig</option>
         </select>
         <a href=""><p>Räkna ut ditt pris</p></a>
+        </section>
     </section>
 
     <footer >

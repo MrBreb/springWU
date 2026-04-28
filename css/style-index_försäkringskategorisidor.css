@@ -34,6 +34,52 @@
         font-family: var(--font_family);
         padding: 0 3vw;
     }
+
+    #insurance_select_sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 10vh;
+    }
+    #insurance_select{
+        appearance: none;
+        width: 60vw;
+        height: 5vh;
+        display: flex;
+        align-self: center;
+        padding: 0 2vw;
+        border: 3px solid var(--accent_colour);
+        border-radius: 5px;
+        box-shadow: var(--box_shadow);
+        outline: none;
+    }
+
+    #insurance_select_sec a{
+        background-color: var(--foreground_colour);
+        margin-top: 5vh;
+        color: var(--black_text_color);
+        font-weight: bold;
+        border: solid var(--accent_colour) 3px;
+        border-radius: 5px;
+        width: fit-content;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        box-shadow: var(--box_shadow);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    #insurance_select_sec a:hover{
+        background-color: rgb(120, 202, 237);
+        box-shadow: 0px 0.2em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    #insurance_select a:active{
+        background-color: rgb(67, 185, 235);
+        box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
 }
 
 #image_sec img{

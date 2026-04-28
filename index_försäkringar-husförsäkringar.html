@@ -83,12 +83,11 @@
         <h2>Husförsäkring</h2>
         <h3>Skydda ditt hem med rätt omfattning</h3>
         <p>Varje hus är unikt, och därför anpassas priset efter din bostads specifika förutsättningar – allt från byggår till boyta. När du går vidare får du välja mellan olika nivåer av skydd, inklusive vårt mest omfattande paket för dig som vill ha extra trygghet mot t.ex. hussvamp eller läckage från våtutrymmen.</p>
-        <ul>
-            <li><p>Detta behöver du: Din adress och boyta i kvadratmeter.</p></li>
-            <li><p>Fakta: Vi inkluderar alltid en ansvarsförsäkring som skyddar dig om du som privatperson skulle krävas på skadestånd.</p></li>
-        </ul>
-        <label for="house_insurance"><p class="select_text">Valmöjligheter:</p></label>
-        <select name="house_insurance" id="house_insurance">
+        <p><b>Detta behöver du:</b> Din adress och boyta i kvadratmeter.</p></li>
+        <p><b>Fakta:</b> Vi inkluderar alltid en ansvarsförsäkring som skyddar dig om du som privatperson skulle krävas på skadestånd.</p></li>
+        <label for="house_insurance"><p class="select_text"><b>Valmöjligheter:</b></p></label>
+        <section id="insurance_select_sec">
+          <select name="house_insurance" id="insurance_select">
             <option value="Villaförsäkring">Villaförsäkring</option>
             <option value="Bostadsrättsförsäkring">Bostadsrättsförsäkring</option>
             <option value="Hyresrättsförsäkring">Hyresrättsförsäkring</option>
@@ -97,6 +96,7 @@
             <option value="Reseförsäkring">Reseförsäkring</option>
         </select>
         <a href=""><p>Räkna ut ditt pris</p></a>
+        </section>
     </section>
 
     <footer >

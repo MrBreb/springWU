@@ -83,12 +83,12 @@
         <h2>Bilförsäkring</h2>
         <h3>Dags att prissätta din trygghet på vägen</h3>
         <p>Innan vi räknar ut ditt pris vill vi att du vet att vår bilförsäkring rankas högt för sin smidiga skadehantering. För att ge dig ett exakt pris baserat på just din bil och din körsträcka behöver vi några korta uppgifter. Kom ihåg att vi automatiskt kollar upp bilens historik så att du får rätt rekommendation direkt.</p>
-        <ul>
-            <li><p>Detta behöver du: Bilens registreringsnummer och din beräknade årliga körsträcka.</p></li>
-            <li><p>Tips: Om du samlar flera försäkringar hos oss kan du få upp till 20% rabatt.</p></li>
-        </ul>
-        <label for="car_insurance"><p class="select_text">Valmöjligheter:</p></label>
-        <select name="car_insurance" id="car_insurance_select">
+        <p><b>Detta behöver du:</b><br> Bilens registreringsnummer och din beräknade årliga körsträcka.</p></li>
+        <p><b>Tips:</b> Om du samlar flera försäkringar hos oss kan du få upp till 20% rabatt.</p></li>
+        <label for="car_insurance"><p><b>Valmöjligheter:</b></p></label>
+        <section id="insurance_select_sec">
+          <select name="car_insurance" id="insurance_select">
+            <option value="" disabled selected>Välj försäkring...</option>
             <option value="Bilförsäkring stor">Bilförsäkring stor</option>
             <option value="Helförsäkring">Helförsäkring</option>
             <option value="Halvförsäkring">Halvförsäkring</option>
@@ -96,8 +96,9 @@
             <option value="Märkesförsäkring">Märkesförsäkring</option>
             <option value="Veteranbilsförsäkring">Veteranbilsförsäkring</option>
             <option value="När du har krockat">När du har krockat</option>
-        </select>
-        <a href=""><p>Räkna ut ditt pris</p></a>
+          </select>
+          <a href=""><p>Räkna ut ditt pris</p></a>
+        </section>
     </section>
 
     <footer >
