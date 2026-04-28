@@ -65,8 +65,29 @@
 @media only screen and (min-width: 801px){
 
     #home_page_sec{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #image_sec{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        background-color: var(--foreground_colour);
+        height: 75vh;
+        width: 40vw;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        align-items: center;
+        justify-content: center;
+    }
+    #paragraf_sec_1{
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
     }
 
     #text_sec{
@@ -76,20 +97,6 @@
         margin: auto;
         padding: var(--padding_val);
         font-family: var(--font_family);
-    }
-
-    #paragraf_sec_1{
-    }
-
-    #image_sec{
-        height: 75vh;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        z-index: 0;
-        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
-        align-items: center;
-        justify-content: center;
     }
 }
 
