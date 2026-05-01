@@ -150,7 +150,7 @@
     }
     #image_sec img{
         filter: brightness(60%);
-        width: 600px;
+        width: 50vw;
         height: 85vh;
         overflow: hidden;
         object-fit: cover;
@@ -252,8 +252,8 @@
     }
 
     #car_insurance{
-        margin-bottom: 10vh;
-        padding: 10vh 6vw;
+        margin-bottom: 6vh;
+        padding: 4vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -270,8 +270,10 @@
     }
 
     #house_insurance{
+        border-top: dotted rgb(239, 239, 239);
+        margin-bottom: 6vh;
         margin-bottom: 10vh;
-        padding: 10vh 6vw;
+        padding: 4vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -288,8 +290,10 @@
     }
 
     #life_insurance{
+        border-top: dotted rgb(239, 239, 239);
+        margin-bottom: 6vh;
         margin-bottom: 10vh;
-        padding: 10vh 6vw;
+        padding: 4vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -306,8 +310,10 @@
     }
 
     #other_vehicle_insurances{
+        border-top: dotted rgb(239, 239, 239);
+        margin-bottom: 6vh;
         margin-bottom: 10vh;
-        padding: 10vh 6vw;
+        padding: 4vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -324,8 +330,10 @@
     }
 
     #animal_insurance{
+        border-top: dotted rgb(239, 239, 239);
+        margin-bottom: 6vh;
         margin-bottom: 10vh;
-        padding: 10vh 6vw;
+        padding: 4vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;

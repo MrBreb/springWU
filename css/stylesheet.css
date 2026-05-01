@@ -14,7 +14,7 @@
 body{
     background-color: rgb(239, 239, 239);
     margin: 0;
-    overflow-x: hidden; /*Denna koden hindrar användaren från att skrolla, så ifall sidan hamnar fel måste man ta bort denna, skrolla ått vänster och sen sätta tillbaks den igen :)*/
+    /*overflow-x: hidden; /*Denna koden hindrar användaren från att skrolla, så ifall sidan hamnar fel måste man ta bort denna, skrolla ått vänster och sen sätta tillbaks den igen :)*/
 }
 
 #wrapper {
