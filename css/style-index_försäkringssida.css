@@ -9,6 +9,7 @@
         display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
         align-items: center;
         justify-content: center;
+        box-shadow: var(--box_shadow);
     }
     #image_sec img{
         filter: brightness(60%);
@@ -36,7 +37,7 @@
     #insurance_sec{
         width: 85vw;
         background-color: var(--foreground_colour);
-        margin: 0 auto;
+        margin: 0 auto;         /*Detta fick jag med hjälp av AI, vet inte varför det inte fungerar utan en nolla i mitten??*/
         display: flex;
         flex-direction: column;
     }
@@ -69,43 +70,72 @@
     }
 
     #car_insurance{
-        padding: 5vh 2vh;
+        padding: 5vh 6vw;
+    }
+    #car_insurance_not_img{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    #car_insurance img{
+        display: none;
+    }
+
     #house_insurance{
         border-top: dotted rgb(239, 239, 239);
         margin-top: 4vh;
-        padding: 5vh 2vh;
+        padding: 5vh 6vw;
+    }
+    #house_insurance_not_img{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    #house_insurance img{
+        display: none;
+    }
+
     #life_insurance{
         border-top: dotted rgb(239, 239, 239);
         margin-top: 4vh;
-        padding: 5vh 2vh;
+        padding: 5vh 6vw;
+    }
+    #life_insurance_not_img{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    #life_insurance img{
+        display: none;
+    }
+
     #other_vehicle_insurances{
         border-top: dotted rgb(239, 239, 239);
         margin-top: 4vh;
-        padding: 5vh 2vh;
+        padding: 5vh 6vw;
+    }
+    #other_vehicle_insurances_not_img{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    #other_vehicle_insurances img{
+        display: none;
+    }
+
     #animal_insurance{
         border-top: dotted rgb(239, 239, 239);
         margin-top: 4vh;
         margin-bottom: 10vh;
-        padding: 5vh 2vh;
+        padding: 5vh 6vw;
+    }
+    #animal_insurance_not_img{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #animal_insurance img{
+        display: none;
     }
 }  
 
@@ -113,7 +143,7 @@
     #image_sec{
         z-index: 0;
         width: 100%;
-        margin-top: -9vh;
+        height: 100vh;
         display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
         align-items: center;
         padding-left: 5vw;
@@ -121,9 +151,11 @@
     #image_sec img{
         filter: brightness(60%);
         width: 600px;
-        height: 100vh;
+        height: 85vh;
         overflow: hidden;
         object-fit: cover;
+        box-shadow: var(--box_shadow);
+        border-radius: 5px 0 0 5px;
     }
     #image_sec p{
         position: absolute;
@@ -137,11 +169,17 @@
     }
 
     #hero_sec{
+        z-index: 1;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
-        padding-top: 10vh;
+        width: 41.5vw;
+        height: 85vh;
         background-color: var(--foreground_colour);
+        border-radius: 0 5px 5px 0;
+        box-shadow: var(--box_shadow);
     }
     #hero_sec a{
         border: solid var(--accent_colour); 
@@ -162,21 +200,23 @@
     #insurance_sec{
         width: 85vw;
         background-color: var(--foreground_colour);
-        margin: 0 auto;
+        margin: 0 auto;     /*Detta fick jag med hjälp av AI, vet inte varför det inte fungerar utan en nolla i mitten??*/
         display: flex;
         flex-direction: column;
+        gap: 10vh;
+        padding-top: 10vh;
     }
 
     .insurance_hyperlink{
-        padding: 0 2vw;
+        padding: 0vh 1vw;
         background-color: var(--foreground_colour);
         margin-top: 5vh;
         color: var(--black_text_color);
         font-weight: bold;
-        border: solid var(--accent_colour) 3px;
+        border: solid rgba(0, 0, 0, 0.231) 3px;
         border-radius: 5px;
         width: fit-content;
-        height: 5vh;
+        height: 6vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -193,46 +233,120 @@
         box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
+    .insurance_text{
+        padding-left: 8px;
+        border-left: 4px solid rgba(0, 0, 0, 0.315);
+    }
+    h3{
+        font-size: 1.5em;
+    }
 
     #car_insurance{
-        padding: 5vh 2vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #house_insurance{
-        border-top: dotted rgb(239, 239, 239);
-        margin-top: 4vh;
-        padding: 5vh 2vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #life_insurance{
-        border-top: dotted rgb(239, 239, 239);
-        margin-top: 4vh;
-        padding: 5vh 2vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #other_vehicle_insurances{
-        border-top: dotted rgb(239, 239, 239);
-        margin-top: 4vh;
-        padding: 5vh 2vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #animal_insurance{
-        border-top: dotted rgb(239, 239, 239);
-        margin-top: 4vh;
         margin-bottom: 10vh;
-        padding: 5vh 2vh;
+        padding: 5vh 6vw;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
+    #car_insurance_not_img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #car_insurance img{
+        height: 80vh;
+        margin-right: -159px;
+        border-radius: 10px;
+    }
+
+    #house_insurance{
+        margin-bottom: 10vh;
+        padding: 5vh 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #house_insurance_not_img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #house_insurance img{
+        height: 80vh;
+        margin-right: -162px;
+        border-radius: 10px;
+    }
+
+    #life_insurance{
+        margin-bottom: 10vh;
+        padding: 5vh 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #life_insurance_not_img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #life_insurance img{
+        height: 80vh;
+        margin-right: -160px;
+        border-radius: 10px;
+    }
+
+    #other_vehicle_insurances{
+        margin-bottom: 10vh;
+        padding: 5vh 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #other_vehicle_insurances_not_img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #other_vehicle_insurances img{
+        height: 80vh;
+        margin-right: -172px;
+        border-radius: 10px;
+    }
+
+    #animal_insurance{
+        margin-bottom: 10vh;
+        padding: 5vh 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #animal_insurance_not_img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #animal_insurance img{
+        height: 80vh;
+        margin-right: -150px;
+        border-radius: 10px;
+    }
+
+    
 }
 
 h3{
