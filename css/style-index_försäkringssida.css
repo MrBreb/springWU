@@ -82,7 +82,7 @@
     }
 
     #house_insurance{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-top: 4vh;
         padding: 5vh 6vw;
     }
@@ -96,7 +96,7 @@
     }
 
     #life_insurance{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-top: 4vh;
         padding: 5vh 6vw;
     }
@@ -110,7 +110,7 @@
     }
 
     #other_vehicle_insurances{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-top: 4vh;
         padding: 5vh 6vw;
     }
@@ -124,7 +124,7 @@
     }
 
     #animal_insurance{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-top: 4vh;
         margin-bottom: 10vh;
         padding: 5vh 6vw;
@@ -270,7 +270,7 @@
     }
 
     #house_insurance{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-bottom: 6vh;
         margin-bottom: 10vh;
         padding: 4vh 6vw;
@@ -290,7 +290,7 @@
     }
 
     #life_insurance{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-bottom: 6vh;
         margin-bottom: 10vh;
         padding: 4vh 6vw;
@@ -310,7 +310,7 @@
     }
 
     #other_vehicle_insurances{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-bottom: 6vh;
         margin-bottom: 10vh;
         padding: 4vh 6vw;
@@ -330,7 +330,7 @@
     }
 
     #animal_insurance{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         margin-bottom: 6vh;
         margin-bottom: 10vh;
         padding: 4vh 6vw;

@@ -36,7 +36,7 @@ h2{
     }
 
     #BankID_sec{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         padding-top: 7.5vh;
         display: flex;
         flex-direction: column;
@@ -69,7 +69,7 @@ h2{
     #manual_log_in{
         padding-top: 5vh;
         padding-bottom: 10vh;
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         background-color: var(--foreground_colour);
         width: 70vw;
         display: flex;
@@ -142,13 +142,13 @@ h2{
         flex-direction: column;
         align-items: center;
         gap: 3vh;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
     }
     #log_in_with_mail input{
         width: 60vw;
         padding: 2vh 3vw;
         font-size: 1em;
-        border: 2px solid rgb(239, 239, 239);
+        border: 2px solid var(--background_color);
         border-radius: 5px;
         background-color: white;
         color: var(--black_text_color);
@@ -197,7 +197,7 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
         margin-top: 3vh;
     }
     #sign_in p{
@@ -232,7 +232,7 @@ h2{
 
 @media only screen and (min-width: 551px) and (max-width: 650px){
     #log_in_sec{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         background-color: var(--foreground_colour);
         width: 85vw;
         display: flex;
@@ -263,7 +263,7 @@ h2{
     }
 
     #BankID_sec{
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         padding-top: 7.5vh;
         display: flex;
         flex-direction: column;
@@ -296,7 +296,7 @@ h2{
     #manual_log_in{
         padding-top: 10vh;
         padding-bottom: 10vh;
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         background-color: var(--foreground_colour);
         width: 70vw;
         display: flex;
@@ -372,13 +372,13 @@ h2{
         flex-direction: column;
         align-items: center;
         gap: 3vh;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
     }
     #log_in_with_mail input{
         width: 60vw;
         padding: 2vh 3vw;
         font-size: 1em;
-        border: 2px solid rgb(239, 239, 239);
+        border: 2px solid var(--background_color);
         border-radius: 5px;
         background-color: white;
         color: var(--black_text_color);
@@ -428,7 +428,7 @@ h2{
         display: flex;
         flex-direction: row;
         align-items: center;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
         margin-top: 3vh;
         padding-top: 3vh;
         gap: 10px;
@@ -468,7 +468,7 @@ h2{
 @media only screen and (min-width: 651px){
     #log_in_sec{
         padding-top: 5vh;
-        border-top: dotted rgb(239, 239, 239);
+        border-top: dotted var(--background_color);
         background-color: var(--foreground_colour);
         width: 85vw;
         display: flex;
@@ -530,7 +530,7 @@ h2{
     #manual_log_in{
         padding-top: 7vh;
         padding-bottom: 10vh;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
         background-color: var(--foreground_colour);
         width: 45vw;
         display: flex;
@@ -608,13 +608,13 @@ h2{
         align-items: center;
         font-weight: bold;
         gap: 3vh;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
     }
     #log_in_with_mail input{
         width: 30vw;
         padding: 2vh 3vw;
         font-size: 1em;
-        border: 2px solid rgb(239, 239, 239);
+        border: 2px solid var(--background_color);
         border-radius: 5px;
         background-color: white;
         color: var(--black_text_color);
@@ -665,7 +665,7 @@ h2{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
         margin-top: 3vh;
         padding-top: 3vh;
         width: 45vw;

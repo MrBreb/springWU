@@ -75,28 +75,35 @@
     </nav>
 
     <section id="image_sec">
-      <img src="img/Sommarhus.jpg" alt="Grupp_collegor_som_pratar">
-      <p><b>Husförsäkringar</b></p>
+      <img src="img/Sommarhus.jpg" alt="">
+      <section id="image_text_sec">
+        <p><b>Husförsäkringar</b></p>
+        <h3 id="mini_text_on_img">Skydda ditt hem med rätt omfattning</h3>
+      </section>
     </section>
 
     <section id="insurance_sec">
-        <h2>Husförsäkring</h2>
-        <h3>Skydda ditt hem med rätt omfattning</h3>
-        <p>Varje hus är unikt, och därför anpassas priset efter din bostads specifika förutsättningar – allt från byggår till boyta. När du går vidare får du välja mellan olika nivåer av skydd, inklusive vårt mest omfattande paket för dig som vill ha extra trygghet mot t.ex. hussvamp eller läckage från våtutrymmen.</p>
-        <p><b>Detta behöver du:</b> Din adress och boyta i kvadratmeter.</p></li>
-        <p><b>Fakta:</b> Vi inkluderar alltid en ansvarsförsäkring som skyddar dig om du som privatperson skulle krävas på skadestånd.</p></li>
-        <label for="house_insurance"><p class="select_text"><b>Valmöjligheter:</b></p></label>
+      <h3 id="mini_text_below_img">Skydda ditt hem med rätt omfattning</h3>
+      <p>Varje hus är unikt, och därför anpassas priset efter din bostads specifika förutsättningar – allt från byggår till boyta. När du går vidare får du välja mellan olika nivåer av skydd, inklusive vårt mest omfattande paket för dig som vill ha extra trygghet mot t.ex. hussvamp eller läckage från våtutrymmen.</p>
+      <section id="insurance_info_sec">
+        <p><b>Detta behöver du:</b><br> Din adress och boyta i kvadratmeter.</p>
+        <p><b>Fakta:</b> Vi inkluderar alltid en ansvarsförsäkring som skyddar dig om du som privatperson skulle krävas på skadestånd.</p>
+      </section>
+      <section id="insurance_select_inkl_label_sec"> 
+        <label for="house_insurance"><p><b>Valmöjligheter:</b></p></label>
         <section id="insurance_select_sec">
           <select name="house_insurance" id="insurance_select">
+            <option value="" disabled selected>Välj försäkring...</option>
             <option value="Villaförsäkring">Villaförsäkring</option>
             <option value="Bostadsrättsförsäkring">Bostadsrättsförsäkring</option>
             <option value="Hyresrättsförsäkring">Hyresrättsförsäkring</option>
             <option value="Fritidshusförsäkring">Fritidshusförsäkring</option>
             <option value="Studentförsäkring">Studentförsäkring</option>
             <option value="Reseförsäkring">Reseförsäkring</option>
-        </select>
-        <a href=""><p>Räkna ut ditt pris</p></a>
+          </select>
+          <a href=""><p>Räkna ut ditt pris</p></a>
         </section>
+      </section>
     </section>
 
     <footer >

@@ -26,12 +26,12 @@
         padding-bottom: 5vh;
     }
     #paragraf_sec_2{
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
     #paragraf_sec_3{
-        border-top: dashed rgb(239, 239, 239);
+        border-top: dashed var(--background_color);
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
