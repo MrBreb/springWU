@@ -184,7 +184,6 @@
     #hero_sec a{
         border: solid var(--accent_colour); 
         background-color: var(--foreground_colour);
-
         width: 30vw;
         height: 50px;
         display: flex;
@@ -194,16 +193,26 @@
         color: var(--black_text_color);
         font-weight: bold;
         border-radius: 5px;
-        box-shadow: var(--box_shadow)
+        box-shadow: var(--box_shadow);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    #hero_sec a:hover{
+        background-color: rgb(120, 202, 237);
+        box-shadow: 0px 0.2em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+    #hero_sec a:active{
+        background-color: rgb(67, 185, 235);
+        box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
+        transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
 
     #insurance_sec{
         width: 85vw;
         background-color: var(--foreground_colour);
-        margin: 0 auto;     /*Detta fick jag med hjälp av AI, vet inte varför det inte fungerar utan en nolla i mitten??*/
+        margin: 0 auto;     /*nollan finns för att den bara ska lägga auto på sidorna sa Gemini*/
         display: flex;
         flex-direction: column;
-        gap: 10vh;
         padding-top: 10vh;
     }
 
@@ -243,7 +252,7 @@
 
     #car_insurance{
         margin-bottom: 10vh;
-        padding: 5vh 6vw;
+        padding: 10vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -264,7 +273,7 @@
 
     #house_insurance{
         margin-bottom: 10vh;
-        padding: 5vh 6vw;
+        padding: 10vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -285,7 +294,7 @@
 
     #life_insurance{
         margin-bottom: 10vh;
-        padding: 5vh 6vw;
+        padding: 10vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -306,7 +315,7 @@
 
     #other_vehicle_insurances{
         margin-bottom: 10vh;
-        padding: 5vh 6vw;
+        padding: 10vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -327,7 +336,7 @@
 
     #animal_insurance{
         margin-bottom: 10vh;
-        padding: 5vh 6vw;
+        padding: 10vh 6vw;
         display: flex;
         flex-direction: row;
         align-items: center;
