@@ -11,6 +11,24 @@
         align-items: center;
         justify-content: center;
     } 
+    #image_sec img{
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #image_sec p{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    #mini_text_on_img{
+        display: none;
+    }
 
     #insurance_sec{
         background-color: var(--foreground_colour);
@@ -18,6 +36,7 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        align-items: center;
     }
     #insurance_sec h2{
         color: var(--black_text_color);
@@ -48,10 +67,13 @@
         display: flex;
         align-self: center;
         padding: 0 2vw;
-        border: 3px solid var(--accent_colour);
+        border: 3px solid rgb(239, 239, 239);
         border-radius: 5px;
         box-shadow: var(--box_shadow);
         outline: none;
+    }
+    #insurance_select::after{
+        content: "";
     }
 
     #insurance_select_sec a{
@@ -82,19 +104,54 @@
     }
 }
 
-#image_sec img{
-    filter: brightness(60%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media only screen and (min-width: 551px){
+    #image_sec{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--box_shadow);
+        z-index: 0;
+        margin-top: -9vh;
+        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        align-items: center;
+        justify-content: center;
+    } 
+    #image_sec img{
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #image_text_sec{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image_text_sec p{
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    #mini_text_on_img{
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 1.7em;
+        margin-top: -3vh;
+        margin-bottom: -2vh;
+    }
+    #mini_text_below_img{
+        display: none;
+    }
 }
 
-#image_sec p{
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 2.5em;
-}
