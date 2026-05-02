@@ -789,29 +789,40 @@ h2{
 
     #report_damage_sec{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         padding: 10vh 15vw;
+        padding-bottom: 15vh;
+    }
+    #report_damage_sec img{
+        width: 20vw;
+        filter: brightness(80%);
     }
     #my_pages_sec{
+        border-top: dotted 4px var(--background_color);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 10vh 15vw;
+        padding-bottom: 15vh;
     }
     #insurance_check_sec{
+        border-top: dotted 4px var(--background_color);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 10vh 15vw;
+        padding-bottom: 15vh;
     }
 
     #common_questions_sec{
+        border-top: dotted 4px var(--background_color);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 10vh 15vw;
         gap: 20px;
+        padding-bottom: 15vh;
     }
     summary{
         color: var(--black_text_color);
@@ -863,6 +874,7 @@ h2{
     }
 
     #send_mail_sec{
+        border-top: dotted 4px var(--background_color);
         padding-top: 5vh;
         padding-bottom: 10vh;
         background-color: var(--foreground_colour);
@@ -871,6 +883,7 @@ h2{
         flex-direction: column;
         align-items: flex-start;
         padding: 10vh 15vw;
+        padding-bottom: 15vh;
     }
     #enter_info_sec{
         display: flex;
@@ -951,6 +964,7 @@ h2{
     }
 
     #contact_sec{
+        border-top: dotted 4px var(--background_color);
         display: flex;
         flex-direction: column;
     }
@@ -962,10 +976,9 @@ h2{
         display: flex;
         flex-direction: row;
         justify-content: center; 
-        border-top: dashed var(--background_color);
         border-bottom: dashed var(--background_color);
         margin: 0 15vw;
-        padding: 5vh 0;
+        padding-bottom: 10vh;
         width: 60vw;
         justify-self: flex-start;
     }
@@ -1008,6 +1021,22 @@ h2{
         flex-direction: column;
         align-items: flex-start;
         padding: 10vh 15vw;
+        padding-bottom: 15vh;
+    }
+
+    #side_foot_sec{
+        border-top: dotted 4px var(--background_color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10vh 0vw;
+        padding-left: 15vw;
+        margin-bottom: 10vh;
+    }
+    #all_side_foot_links_sec{
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
     }
 }
 
