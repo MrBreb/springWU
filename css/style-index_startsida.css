@@ -11,6 +11,21 @@
         align-items: center;
         justify-content: center;
     }
+    #image_sec img{
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #image_sec p{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+    }
 
     #text_sec{
         background-color: var(--foreground_colour);
@@ -20,12 +35,22 @@
         padding: var(--padding_val);
         font-family: var(--font_family);
     }
+    #text_sec h3{
+        background-color: var(--accent_colour);
+        color: rgb(255, 255, 255);
+        width: fit-content;
+        padding: var(--smaller_padding_val);
+        border-radius: 2px 6px 6px 6px;
+    }  
 
-    #paragraf_sec_1{
+    #hwo_are_we_below_img{
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
-    #paragraf_sec_2{
+    #hwo_are_we_beside_img{
+        display: none;
+    }
+    #team_of_experts{
         border-top: dashed var(--background_color);
         padding-top: 5vh;
         padding-bottom: 5vh;
@@ -63,64 +88,83 @@
 }
 
 @media only screen and (min-width: 801px){
-
-    #home_page_sec{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
     #image_sec{
-        display: grid;
-        grid-column: 1;
-        grid-row: 1;
-        background-color: var(--foreground_colour);
-        height: 75vh;
-        width: 40vw;
-        overflow: hidden;
-        position: relative;
         z-index: 0;
-        display: flex;                      /*Innan jag använde flex använde jag AI genererad kod som var mindre effektiv än att bara använda flex*/
+        width: 100%;
+        height: 100vh;
+        display: flex;
         align-items: center;
-        justify-content: center;
+        padding-left: 5vw;
     }
-    #paragraf_sec_1{
-        display: grid;
-        grid-column: 2;
-        grid-row: 1;
+    #image_sec img{
+        filter: brightness(60%);
+        width: 600px;
+        height: 85vh;
+        overflow: hidden;
+        object-fit: cover;
+        box-shadow: var(--box_shadow);
+        border-radius: 5px 0 0 5px;
+    }
+    #image_sec_p{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+        margin-left: -26.5vw;
     }
 
-    #text_sec{
+    #image_sec h3{
+        background-color: var(--accent_colour);
+        color: rgb(255, 255, 255);
+        width: fit-content;
+        padding: var(--smaller_padding_val);
+        border-radius: 2px 6px 6px 6px;
+    }  
+
+    #text_sec h3{
+        background-color: var(--accent_colour);
+        color: rgb(255, 255, 255);
+        width: fit-content;
+        padding: var(--smaller_padding_val);
+        border-radius: 2px 6px 6px 6px;
+    }  
+
+    #hwo_are_we_below_img{
+        display: none;
+    }
+    #hwo_are_we_beside_img{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 41.5vw;
+        height: 85vh;
         background-color: var(--foreground_colour);
-        height: auto;
-        width: 100%;
-        margin: auto;
-        padding: var(--padding_val);
+        border-radius: 0 5px 5px 0;
+        box-shadow: var(--box_shadow);
+        gap: 25px;
+    }
+    #hwo_are_we_beside_img p, #hwo_are_we_beside_img h3, #hwo_are_we_beside_img h4{
+        margin: 0 5vw;
         font-family: var(--font_family);
     }
+
+    
+
+    .slightly_smaller_img{
+        width: 18vw;
+    }
+    #slightly_bigger_img{
+        width: 22vw;
+    }
+
+
+
+    
 }
 
-#text_sec article h3{
-    background-color: var(--accent_colour);
-    color: rgb(255, 255, 255);
-    width: fit-content;
-    padding: var(--smaller_padding_val);
-    border-radius: 2px 6px 6px 6px;
-}    
-
-#image_sec img{
-    filter: brightness(60%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#image_sec p{
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 2.5em;
-}
+  
