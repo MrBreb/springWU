@@ -781,6 +781,11 @@ h2{
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
 
+    .hyperlink_description_first_three{
+        padding-left: 8px;
+        border-left: 4px solid rgba(0, 0, 0, 0.315);
+        padding-right: 5vw;
+    }
     .hyperlink_description{
         padding-left: 8px;
         border-left: 4px solid rgba(0, 0, 0, 0.315);
@@ -788,31 +793,66 @@ h2{
     }
 
     #report_damage_sec{
+        margin-bottom: 10vh;
+        padding: 10vh 6vw;
         display: flex;
         flex-direction: row;
+        align-items: center;
+    }
+    #report_damage_sec section{
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
-        padding: 10vh 15vw;
-        padding-bottom: 15vh;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
     }
     #report_damage_sec img{
-        width: 20vw;
-        filter: brightness(80%);
+        height: 70vh;
+        margin-right: -68px;
+        border-radius: 10px;
     }
+
     #my_pages_sec{
-        border-top: dotted 4px var(--background_color);
+        margin-bottom: 10vh;
+        padding: 10vh 6vw;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10vh 15vw;
-        padding-bottom: 15vh;
+        flex-direction: row;
+        align-items: center;
     }
-    #insurance_check_sec{
-        border-top: dotted 4px var(--background_color);
+    #my_pages_sec section{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10vh 15vw;
-        padding-bottom: 15vh;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #my_pages_sec img{
+        height: 70vh;
+        margin-right: -68px;
+        border-radius: 10px;
+    }
+
+    #insurance_check_sec{
+        margin-bottom: 10vh;
+        padding: 10vh 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #insurance_check_sec section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -100px;
+        padding-right: 5vw;
+        color: var(--black_text_color);
+    }
+    #insurance_check_sec img{
+        height: 70vh;
+        margin-right: -68px;
+        border-radius: 10px;
     }
 
     #common_questions_sec{
