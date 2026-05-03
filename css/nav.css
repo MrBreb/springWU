@@ -21,9 +21,9 @@
     }
     
     #nav_button {
-        height: 15%;
-        position: absolute;
-        bottom: -5px; 
+        height: 25px;
+        position: relative;
+        bottom: -20px; 
         left: 50%;
         transform: translateX(-50%);
         filter: invert();
@@ -34,7 +34,7 @@
     /*Idéen att separera nav och nav content fick jag av Gemini. Men koden skrev jag själv*/
     #nav_content { 
         background-color: var(--accent_colour);
-        height: 75vh;
+        height: 72vh;
         width: 60vw;
         position: absolute; 
         top: var(--nav_menu_pos);
@@ -46,8 +46,8 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
     }
     
-    #nav_content img {
-        height: 10vh;
+    #nav_content section img {
+        height: 8vh;
         filter: invert();
     }
     
