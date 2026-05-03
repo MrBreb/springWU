@@ -86,7 +86,7 @@ h2{
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
 
-    #report_damage_sec{
+    #report_damage_sec section{
         background-color: var(--foreground_colour);
         width: 85vw;
         padding-top: 5vh;
@@ -100,8 +100,11 @@ h2{
         text-align: center;
         padding: 0 5vw;
     }
+    #report_damage_sec img{
+        display: none;
+    }
 
-    #my_pages_sec{
+    #my_pages_sec section{
         background-color: var(--foreground_colour);
         width: 85vw;
         padding-top: 5vh;
@@ -115,8 +118,11 @@ h2{
         text-align: center;
         padding: 0 5vw;
     }
+    #my_pages_sec img{
+        display: none;
+    }
 
-    #insurance_check_sec{
+    #insurance_check_sec section{
         background-color: var(--foreground_colour);
         width: 85vw;
         padding-top: 5vh;
@@ -129,6 +135,9 @@ h2{
     #insurance_check_sec p{
         text-align: center;
         padding: 0 5vw;
+    }
+    #insurance_check_sec img{
+        display: none;
     }
 
     #common_questions_sec{
@@ -257,7 +266,6 @@ h2{
         margin-top: 5vh;
         color: var(--black_text_color);
         font-weight: bold;
-        border: solid var(--accent_colour) 3px;
         border-radius: 5px;
         width: 35vw;
         height: 5vh;
@@ -509,31 +517,52 @@ h2{
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
 
+    .hyperlink_description_first_three{
+        padding-left: 8px;
+        border-left: 4px solid rgba(0, 0, 0, 0.315);
+        padding-right: 5vw;
+    }
     .hyperlink_description{
         padding-left: 8px;
         border-left: 4px solid rgba(0, 0, 0, 0.315);
-        padding-right: 10vw;
+        padding-right: 20vw;
     }
+
     #report_damage_sec{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10vh 15vw;
+        padding: 15vh 15vw;
+        padding-bottom: 20vh;
+    }
+    #report_damage_sec img{
+        display: none;
     }
     #my_pages_sec{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10vh 15vw;
+        padding: 15vh 15vw;
+        padding-bottom: 20vh;
+        border-top: dotted 4px var(--background_color);
+    }
+    #my_pages_sec img{
+        display: none;
     }
     #insurance_check_sec{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10vh 15vw;
+        padding: 15vh 15vw;
+        padding-bottom: 20vh;
+        border-top: dotted 4px var(--background_color);
+    }
+    #insurance_check_sec img{
+        display: none;
     }
 
     #common_questions_sec{
+        border-top: dotted 4px var(--background_color);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -590,26 +619,33 @@ h2{
     }
 
     #send_mail_sec{
+        border-top: dotted 4px var(--background_color);
         padding-top: 5vh;
         padding-bottom: 10vh;
-        border-top: dotted var(--background_color);
-        width: 85vw;
         background-color: var(--foreground_colour);
         color: var(--black_text_color);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 10vh 15vw;
+        padding-bottom: 15vh;
     }
     #send_mail_sec p{
-        padding: 0 5vw;
+        padding: 0 1vw;
     }
     #enter_info_sec{
         display: flex;
         flex-direction: column;
         gap: 2vh;
     }
-    #enter_info_sec input{
-        width: 60vw;
+    .input_sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2vh;
+    }
+    .input_sec input{
+        width: 20vw;
         padding: 2vh 3vw;
         font-size: 1em;
         border: 2px solid var(--background_color);
@@ -624,13 +660,13 @@ h2{
         box-shadow: 0px 0.1em 7px rgba(0, 0, 0, 0.226) inset;
         transition: box-shadow ease 0.2s;
     }
-    #enter_info_sec section{
+    #textarea_sec{
         padding-top: 2vh;
         border-top: dashed var(--background_color);
     }
-    #enter_info_sec section textarea{
-        width: 61.3vw;
-        height: 10vh;
+    #textarea_sec textarea{
+        width: 51.5vw;
+        height: 20vh;
         padding: 2vh;
         font-size: 1em;
         font-family: var(--font_family);
@@ -643,7 +679,7 @@ h2{
         resize: none;
         transition: box-shadow ease 0.2s;
     }
-    #enter_info_sec section textarea:focus{
+    #textarea_sec textarea:focus{
         box-shadow: 0px 0.1em 7px rgba(0, 0, 0, 0.226) inset;
         transition: box-shadow ease 0.2s;
     }
@@ -653,10 +689,11 @@ h2{
         margin-top: 5vh;
         color: var(--black_text_color);
         font-weight: bold;
-        border: solid var(--accent_colour) 3px;
+        border: solid rgba(0, 0, 0, 0.231) 3px;
         border-radius: 5px;
-        width: 35vw;
-        height: 5vh;
+        width: 15vw;
+        height: 7vh;
+        white-space: nowrap;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -672,6 +709,82 @@ h2{
         background-color: rgb(67, 185, 235);
         box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    }
+
+    #contact_sec{
+        border-top: dotted 4px var(--background_color);
+        display: flex;
+        flex-direction: column;
+    }
+    #call_us_sec h2{
+        padding: 5vh 15vw;
+        padding-top: 10vh;
+    }
+    #all_ways_to_conact_sec{
+        display: flex;
+        flex-direction: column; 
+        border-bottom: dashed var(--background_color);
+        margin: 0 15vw;
+        padding-bottom: 10vh;
+        width: 60vw;
+        justify-self: flex-start;
+        gap: 25px;
+    }
+    #private_contact_sec{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 30vw;
+    }
+    #buissness_contact_sec{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 30vw;
+    }
+    #emergency_contact_sec{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 30vw;
+    }
+    .slightly_bigger_text{
+        font-weight: bold;
+        font-size: 1.2em;
+        color: var(--black_text_color);
+    }
+    .tiny_text{
+        color: var(--black_text_color);
+        padding-right: 4vw;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #AI_chat_sec{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10vh 15vw;
+        padding-bottom: 15vh;
+    }
+
+    #side_foot_sec{
+        border-top: dotted 4px var(--background_color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10vh 0vw;
+        padding-left: 15vw;
+        margin-bottom: 10vh;
+    }
+    #all_side_foot_links_sec{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
     }
 }
 
@@ -899,8 +1012,8 @@ h2{
         background-color: var(--background_color); 
     }
     
-     /*summary::after och details[open] summary::after Fick jag från Gemini*/
-     summary::after {
+    /*summary::after och details[open] summary::after Fick jag från Gemini*/
+    summary::after {
         content: '❯';
         display: inline-block;
         width: 1.5em;       /* Ger pilen en fast "box" att rotera i */

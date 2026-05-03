@@ -173,10 +173,12 @@
     }
     .slightly_smaller_img{
         width: 18vw;
+        border-radius: 5px;
     }
     #slightly_bigger_img{
         width: 22vw;
-        padding: 0 5vw;
+        margin: 0 5vw;
+        border-radius: 5px;
     }
 
     #team_of_experts_paragraf_sec{
@@ -315,10 +317,12 @@
     }
     .slightly_smaller_img{
         width: 18vw;
+        border-radius: 5px;
     }
     #slightly_bigger_img{
         width: 22vw;
-        padding: 0 5vw;
+        margin: 0 5vw;
+        border-radius: 5px;
     }
 
     #team_of_experts_paragraf_sec{
