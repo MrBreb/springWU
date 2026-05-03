@@ -3,17 +3,16 @@
     color: inherit;
 }
 
-footer{
+footer {
     background-color: rgb(66, 66, 66);
-    height: 60vh;
     color: white;
     box-shadow: var(--box_shadow_footer);
-    display: grid;
-    grid-template-areas: "f f k";
-    position: relative; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-footer h2{
+footer h2 {
     font-family: var(--font_family);
     font-size: 1.5em;
     font-weight: 100;
@@ -21,15 +20,7 @@ footer h2{
     color: white;
 }
 
-#footer_follow_sec{
-    grid-area: f;  
-    padding-left: 0.5em;
-}
-#footer_contact_sec{
-    grid-area: k;
-}
-
-#footer_follow_sec a > div{
+#footer_follow_sec a > div, #footer_links_content a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -39,47 +30,131 @@ footer h2{
     border-radius: 0px 0px 15px 15px;
 }
 
-#footer_follow_sec img{
+#footer_follow_sec img, #footer_contact_sec img {
     width: 45px;
     border-radius: 7px;
 }
 
-#telefone_sec{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0.5em;
-    margin-right: 2em;
-    border-bottom: solid rgb(50, 50, 50);
-    border-radius: 0px 0px 15px 15px;
-    width: 45vw;
-}
-
-#mail_sec{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0.5em;
-    margin-right: 2em;
-    border-bottom: solid rgb(50, 50, 50);
-    border-radius: 0px 0px 15px 15px;
-    width: 45vw;
-    overflow-wrap: anywhere;
-}
-
-#footer_contact_sec img{
-    width: 45px;
-    border-radius: 7px;
-}
-
-#telefone_sec img{
+#telefone_sec img {
     filter: invert();
 }
 
-footer > section > p{
-    margin-left: 0.5em;
+p {
+    font-family: var(--font_family);
 }
 
-p{
-    font-family: var(--font_family);
+@media only screen and (max-width: 550px) {
+    footer {
+        height: auto;
+        padding-bottom: 20px;
+        padding: 20px 2vw;
+    }
+
+    #telefone_sec, #mail_sec {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0.5em;
+        margin-right: 2em;
+        border-bottom: solid rgb(50, 50, 50);
+        border-radius: 0px 0px 15px 15px;
+        width: fit-content;
+        min-width: 60vw;
+    }
+
+    #footer_bottom {
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 700px) {
+    footer {
+        display: grid;
+        grid-template-areas: 
+            "f l"
+            "k k"
+            "b b";
+        gap: 10px;
+    }
+
+    #footer_follow_sec { 
+        grid-area: f; 
+    }
+    #footer_links_sec { 
+        grid-area: l; 
+    }
+    
+    #footer_contact_sec { 
+        grid-area: k; 
+        display: flex;
+        flex-direction: column;
+    }
+    #footer_contact_links_div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*denna koden fick jag från gemini*/
+    #footer_contact_sec > a:nth-of-type(1), 
+    #footer_contact_sec > a:nth-of-type(2) {
+        display: inline-block;
+        width: 48%;
+    }
+
+    #telefone_sec, #mail_sec {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0.5em;
+        border-bottom: solid rgb(50, 50, 50);
+        border-radius: 0px 0px 15px 15px;
+        width: auto;
+    }
+
+    #footer_bottom {
+        grid-area: b;
+        text-align: center;
+        margin-top: 2vh;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    footer {
+        min-height: 40vh;
+        display: grid;
+        grid-template-areas: "f l k"
+                             "b b b";
+        grid-template-rows: 1fr auto;
+    }
+
+    #footer_follow_sec { 
+        grid-area: f; 
+        padding-left: 0.5em; 
+    }
+    #footer_links_sec { 
+        grid-area: l; 
+        padding-left: 0.5em; 
+    }
+    #footer_contact_sec { 
+        grid-area: k; 
+    }
+
+    #footer_bottom { 
+        grid-area: b; 
+        text-align: center; 
+        padding: 20px;   
+        margin-top: 5vh;
+    }
+
+    #telefone_sec, #mail_sec {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0.5em;
+        border-bottom: solid rgb(50, 50, 50);
+        border-radius: 0px 0px 15px 15px;
+        width: auto;
+    }
 }

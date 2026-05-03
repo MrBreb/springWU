@@ -84,7 +84,7 @@
         position: relative;
         z-index: 2;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #header_content{
@@ -93,6 +93,8 @@
         align-items: center;
         gap: 3vw;
         margin-right: 3vw;
+        margin-left: -3vw;
+        text-wrap: nowrap;
     }
 
     #header_content div{
