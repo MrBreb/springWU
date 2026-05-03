@@ -5,12 +5,20 @@
 
 footer{
     background-color: rgb(66, 66, 66);
-    height: 50vh;
+    height: 60vh;
     color: white;
     box-shadow: var(--box_shadow_footer);
     display: grid;
     grid-template-areas: "f f k";
     position: relative; 
+}
+
+footer h2{
+    font-family: var(--font_family);
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-left: 1vw;
+    color: white;
 }
 
 #footer_follow_sec{
@@ -21,7 +29,7 @@ footer{
     grid-area: k;
 }
 
-#footer_follow_sec a > section{
+#footer_follow_sec a > div{
     display: flex;
     align-items: center;
     gap: 10px;

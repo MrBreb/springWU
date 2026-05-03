@@ -23,7 +23,7 @@
     #nav_button {
         height: 25px;
         position: relative;
-        bottom: -20px; 
+        bottom: -2.5vh; 
         left: 50%;
         transform: translateX(-50%);
         filter: invert();
@@ -34,7 +34,7 @@
     /*Idéen att separera nav och nav content fick jag av Gemini. Men koden skrev jag själv*/
     #nav_content { 
         background-color: var(--accent_colour);
-        height: 72vh;
+        height: 73vh;
         width: 60vw;
         position: absolute; 
         top: var(--nav_menu_pos);
@@ -46,7 +46,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
     }
     
-    #nav_content section img {
+    #nav_content .nav_hyperlinks img {
         height: 8vh;
         filter: invert();
     }
@@ -84,12 +84,7 @@
         display: none;
     }
     
-    /*Idéen att separera nav och nav content fick jag av Gemini. Men koden skrev jag själv*/
     #nav_content { 
-        display: none;
-    }
-    
-    #nav_content img {
         display: none;
     }
     

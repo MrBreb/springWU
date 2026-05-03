@@ -152,6 +152,8 @@ h2{
         gap: 3vh;
     }
     summary{
+        padding: 4vh 2vw;
+        font-family: var(--font_family);
         color: var(--black_text_color);
         font-weight: bold;
         border: solid var(--accent_colour) 3px;
@@ -173,9 +175,6 @@ h2{
         box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     }
-    summary p{
-        padding: 0 2vw;
-    }
     details{
         width: 60vw;
     }
@@ -192,6 +191,7 @@ h2{
         padding-right: 2vw;
         transition: transform 0.3s ease;
         color: var(--accent_colour);
+        margin-left: 10vw;
     }
     details[open] summary::after {
         transform: rotate(90deg);
@@ -266,6 +266,7 @@ h2{
         margin-top: 5vh;
         color: var(--black_text_color);
         font-weight: bold;
+        border: solid var(--accent_colour) 3px;
         border-radius: 5px;
         width: 35vw;
         height: 5vh;
@@ -295,7 +296,7 @@ h2{
         display: flex;
         flex-direction: column;
     }
-    #call_us_sec section{
+    #call_us_sec div{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -570,6 +571,8 @@ h2{
         gap: 20px;
     }
     summary{
+        padding: 4vh 2vw;
+        font-family: var(--font_family);
         color: var(--black_text_color);
         font-weight: bold;
         border: solid rgba(0, 0, 0, 0.231) 3px;
@@ -590,9 +593,6 @@ h2{
         background-color: rgb(67, 185, 235);
         box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
-    }
-    summary p{
-        padding: 0 2vw;
     }
     details{
         width: 60vw;
@@ -978,6 +978,8 @@ h2{
         padding-bottom: 15vh;
     }
     summary{
+        padding: 4vh 2vw;
+        font-family: var(--font_family);
         color: var(--black_text_color);
         font-weight: bold;
         border: solid rgba(0, 0, 0, 0.231) 3px;
@@ -998,9 +1000,6 @@ h2{
         background-color: rgb(67, 185, 235);
         box-shadow: 0px 0em 7px rgba(0, 0, 0, 0.226);
         transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
-    }
-    summary p{
-        padding: 0 2vw;
     }
     details{
         width: 60vw;

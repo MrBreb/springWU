@@ -17,7 +17,7 @@
         height: 100%;
         object-fit: cover;
     }
-    #image_sec p{
+    #image_sec h1{
         position: absolute;
         z-index: 1;
         width: 100vw;
@@ -35,12 +35,10 @@
         padding: var(--padding_val);
         font-family: var(--font_family);
     }
-    #text_sec h3{
-        background-color: var(--accent_colour);
-        color: rgb(255, 255, 255);
+    #text_sec h2{
+        color: var(--black_text_color);
         width: fit-content;
         padding: var(--smaller_padding_val);
-        border-radius: 2px 6px 6px 6px;
     }  
 
     #hwo_are_we_below_img{
@@ -55,9 +53,6 @@
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
-    #team_of_experts h1{
-        display: none;
-    }
     #team_of_experts_img_sec{
         display: none;
     }
@@ -67,9 +62,6 @@
         padding-bottom: 5vh;
     }
     #part_of_something_bigger_sec img{
-        display: none;
-    }
-    #part_of_something_bigger_sec h1{
         display: none;
     }
 }
@@ -92,7 +84,7 @@
         box-shadow: var(--box_shadow);
         border-radius: 5px 0 0 5px;
     }
-    #image_sec_p{
+    #image_sec h1{
         position: absolute;
         z-index: 1;
         width: 100vw;
@@ -103,12 +95,11 @@
         margin-left: -26.5vw;
     }
 
-    #image_sec h3{
-        background-color: var(--accent_colour);
-        color: rgb(255, 255, 255);
+    #image_sec h2{
+        color: var(--black_text_color);
         width: fit-content;
         padding: var(--smaller_padding_val);
-        border-radius: 2px 6px 6px 6px;
+        font-family: var(--font_family);
     }  
 
     #text_sec{
@@ -116,13 +107,6 @@
         background-color: var(--foreground_colour);
         margin: 0 auto;
     }
-    #text_sec h3{
-        background-color: var(--accent_colour);
-        color: rgb(255, 255, 255);
-        width: fit-content;
-        padding: var(--smaller_padding_val);
-        border-radius: 2px 6px 6px 6px;
-    } 
 
     #hwo_are_we_below_img{
         display: none;
@@ -140,7 +124,7 @@
         box-shadow: var(--box_shadow);
         gap: 25px;
     }
-    #hwo_are_we_beside_img p, #hwo_are_we_beside_img h3, #hwo_are_we_beside_img h4{
+    #hwo_are_we_beside_img p, #hwo_are_we_beside_img h2, #hwo_are_we_beside_img h3{
         margin: 0 5vw;
         font-family: var(--font_family);
     }
@@ -153,12 +137,9 @@
         color: var(--black_text_color);
         font-family: var(--font_family);
     }
-    #team_of_experts h1{
+    #team_of_experts h2{
         margin: 10vh 0;
         font-size: 2.5em;
-    }
-    #team_of_experts h3{
-        display: none;
     }
 
     #team_of_experts_img_sec{
@@ -198,13 +179,10 @@
         width: 80vw;
         border-radius: 5px;
     }
-    #part_of_something_bigger_sec h1{
+    #part_of_something_bigger_sec h2{
         margin-top: -40vh;
         margin-bottom: 100px;
         font-size: 3em;
-    }
-    #part_of_something_bigger_sec h3{
-        display: none;
     }
 
     #part_of_something_bigger_paragraf_sec{
@@ -236,7 +214,7 @@
         box-shadow: var(--box_shadow);
         border-radius: 5px 0 0 5px;
     }
-    #image_sec_p{
+    #image_sec h1{
         position: absolute;
         z-index: 1;
         width: 100vw;
@@ -247,12 +225,10 @@
         margin-left: -26.5vw;
     }
 
-    #image_sec h3{
-        background-color: var(--accent_colour);
-        color: rgb(255, 255, 255);
+    #image_sec h2{
+        color: var(--black_text_color);
         width: fit-content;
         padding: var(--smaller_padding_val);
-        border-radius: 2px 6px 6px 6px;
     }  
 
     #text_sec{
@@ -260,13 +236,6 @@
         background-color: var(--foreground_colour);
         margin: 0 auto;
     }
-    #text_sec h3{
-        background-color: var(--accent_colour);
-        color: rgb(255, 255, 255);
-        width: fit-content;
-        padding: var(--smaller_padding_val);
-        border-radius: 2px 6px 6px 6px;
-    }  
 
     #hwo_are_we_below_img{
         display: none;
@@ -284,7 +253,7 @@
         box-shadow: var(--box_shadow);
         gap: 25px;
     }
-    #hwo_are_we_beside_img p, #hwo_are_we_beside_img h3, #hwo_are_we_beside_img h4{
+    #hwo_are_we_beside_img p, #hwo_are_we_beside_img h2, #hwo_are_we_beside_img h3{
         margin: 0 5vw;
         font-family: var(--font_family);
     }
@@ -297,12 +266,9 @@
         color: var(--black_text_color);
         font-family: var(--font_family);
     }
-    #team_of_experts h1{
+    #team_of_experts h2{
         margin: 10vh 0;
         font-size: 2.5em;
-    }
-    #team_of_experts h3{
-        display: none;
     }
 
     #team_of_experts_img_sec{
@@ -342,13 +308,10 @@
         width: 80vw;
         border-radius: 5px;
     }
-    #part_of_something_bigger_sec h1{
+    #part_of_something_bigger_sec h2{
         margin-top: -325px;
         margin-bottom: 100px;
         font-size: 3em;
-    }
-    #part_of_something_bigger_sec h3{
-        display: none;
     }
 
     #part_of_something_bigger_paragraf_sec{

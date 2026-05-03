@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +8,37 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
-  <title>Trygg-Hansa/Startsida</title>
+  <title>Trygg-Hansa/Försäkringar/MC_och_andra_fordon</title>
 
 </head>
 <body>
   <section id="wrapper">
     <header>
-      <img src="img/Trygg-Hansa logga - baby blue.jpg" alt="Trygg-Hansa loggan">
+      <img src="img/Ny_trygg_hansa_logga.jpg" alt="Trygg-Hansa loggan">
       <div id="header_content">
         <a href="index_försäkringar.html" class="header_link">
-          <section class="header_hyperlinks">
+          <div class="header_hyperlinks">
             <img src="img/Trygg-Hansa-ikon.png" alt="Trygg-Hansa Ikon">
             <p>Försäkringar</p>
-          </section>
+          </div>
         </a>
         <a href="index_kundservice.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/Telefon-ikon.png" alt="Telefon Ikon">
             <p>Kundservice</p>
-          </section>
+          </div>
         </a>
         <a href="index_startsida.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/home.png" alt="Hus Ikon">
             <p>Startsida</p>
-          </section>
+          </div>
         </a>
         <a href="index_logga_in.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/Profil-ikon.png" alt="Logga In Ikon">
             <p>Logga in</p>
-          </section>
+          </div>
         </a>
       </div>
     </header>
@@ -47,102 +47,104 @@
       <div id="shadow_behind_nav"></div>
       <div id="nav_content">
         <a href="index_startsida.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/home.png" alt="Hus Ikon">
             <p>Startsida</p>
-          </section>
+          </div>
         </a>
         <a href="index_logga_in.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Profil-ikon.png" alt="Profil Ikon">
             <p>Logga in</p>
-          </section>
+          </div>
         </a>
         <a href="index_kundservice.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Telefon-ikon.png" alt="Telefon Ikon">
             <p>Kundservice</p>
-          </section>
+          </div>
         </a>
         <a href="index_försäkringar.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Trygg-Hansa-ikon.png" alt="Trygg-Hansa Ikon">
             <p>Försäkringar</p>
-          </section>
+          </div>
         </a>
         <img id="nav_button" src="img/Pil.png" alt="Meny Icon">
       </div>
     </nav>
 
-    <section id="image_sec">
-      <img src="img/Husbil.jpg" alt="En kvinna som står bortvänd från kameran mot en husbil">
-      <section id="image_text_sec">
-        <p><b>Mc & andra fordon</b></p>
-        <h3 id="mini_text_on_img">Redo för nästa äventyr?</h3>
+    <main>
+      <div id="image_sec">
+        <img src="img/Husbil.jpg" alt="En kvinna som står bortvänd från kameran mot en husbil">
+        <div id="image_text_sec">
+          <p><b>Mc & andra fordon</b></p>
+          <h3 id="mini_text_on_img">Redo för nästa äventyr?</h3>
+        </div>
+      </div>
+      
+      <section id="insurance_sec">
+        <h3 id="mini_text_below_img">Redo för nästa äventyr?</h3>
+        <p>Oavsett om det handlar om säsongens första MC-tur eller att säkra husbilen inför semestern, hjälper vi dig att hitta rätt nivå. Vi tar hänsyn till om du ställer av ditt fordon under vintern eller om du kör året om. Priset baseras på fordonstyp, din ålder och var du bor.</p>
+        <div id="insurance_info_sec">
+          <p><b>Detta behöver du:</b><br> Registreringsnummer och information om hur fordonet förvaras nattetid (t.ex. i låst garage för extra rabatt).</p>
+          <p><b>Fokus:</b> Vi täcker även din skyddsutrustning och hjälm i våra mer omfattande paket.</p>
+        </div>
+        <div id="insurance_select_inkl_label_sec"> 
+          <label for="insurance_select"><b>Valmöjligheter:</b></label>
+          <div id="insurance_select_sec">
+            <select name="other_vehicle_insurances" id="insurance_select">
+              <option value="" disabled selected>Välj försäkring...</option>
+              <option value="Mc-försäkring">Mc-försäkring</option>
+              <option value="Mopedförsäkring">Mopedförsäkring</option>
+              <option value="Släpvagnsförsäkring">Släpvagnsförsäkring</option>
+              <option value="Båtförsäkring">Båtförsäkring</option>
+              <option value="Terrängfordonsförsäkring">Terrängfordonsförsäkring</option>
+              <option value="Husbilsförsäkring">Husbilsförsäkring</option>
+              <option value="Husvagnsförsäkring">Husvagnsförsäkring</option>
+              <option value="Snöskoterförsäkring">Snöskoterförsäkring</option>
+            </select>
+            <a href="index_logga_in.html"><p>Räkna ut ditt pris</p></a>
+          </div>
+        </div>
       </section>
-    </section>
+    </main>
 
-    <section id="insurance_sec">
-      <h3 id="mini_text_below_img">Redo för nästa äventyr?</h3>
-      <p>Oavsett om det handlar om säsongens första MC-tur eller att säkra husbilen inför semestern, hjälper vi dig att hitta rätt nivå. Vi tar hänsyn till om du ställer av ditt fordon under vintern eller om du kör året om. Priset baseras på fordonstyp, din ålder och var du bor.</p>
-      <section id="insurance_info_sec">
-        <p><b>Detta behöver du:</b><br> Registreringsnummer och information om hur fordonet förvaras nattetid (t.ex. i låst garage för extra rabatt).</p>
-        <p><b>Fokus:</b> Vi täcker även din skyddsutrustning och hjälm i våra mer omfattande paket.</p>
-      </section>
-      <section id="insurance_select_inkl_label_sec"> 
-        <label for="other_vehicle_insurances"><p><b>Valmöjligheter:</b></p></label>
-        <section id="insurance_select_sec">
-          <select name="other_vehicle_insurances" id="insurance_select">
-            <option value="" disabled selected>Välj försäkring...</option>
-            <option value="Mc-försäkring">Mc-försäkring</option>
-            <option value="Mopedförsäkring">Mopedförsäkring</option>
-            <option value="Släpvagnsförsäkring">Släpvagnsförsäkring</option>
-            <option value="Båtförsäkring">Båtförsäkring</option>
-            <option value="Terrängfordonsförsäkring">Terrängfordonsförsäkring</option>
-            <option value="Husbilsförsäkring">Husbilsförsäkring</option>
-            <option value="Husvagnsförsäkring">Husvagnsförsäkring</option>
-            <option value="Snöskoterförsäkring">Snöskoterförsäkring</option>
-          </select>
-          <a href="index_logga_in.html"><p>Räkna ut ditt pris</p></a>
-        </section>
-      </section>
-    </section>
-
-    <footer >
+    <footer>
       <section id="footer_contact_sec">
-        <p>Kontakta oss:</p>
+        <h2>Kontakta oss:</h2>
         <a href="Tel:+46739950078" class="footer_link">
-          <section id="telefone_sec">
+          <div id="telefone_sec">
             <img src="img/Telefon-ikon.png" alt="Telefon ikon">
             <p>Tel: 077-111 11 10</p>
-          </section>
+          </div>
         </a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMjKKdfPtjXfkHBjxpcJhPcvPMSHxdSKRrQVPqQRntxMJMqgvTfVmmDQDGrpDQRTVhnXskV" class="footer_link">
-          <section id="mail_sec">
+          <div id="mail_sec">
             <img src="img/Mejl-ikon.jpg" alt="Brev ikon">
             <p>Mail: privat@trygghansa.se</p>
-          </section>
+          </div>
         </a>
       </section>
       <section id="footer_follow_sec">
-        <p>Följ oss:</p>
+        <h2>Följ oss:</h2>
         <a href="https://www.instagram.com/trygg_hansa/" class="footer_link">
-          <section id="footer_follow_insta_sec">
-            <img src="img/Instagrams logga.jpg" alt="Instagram Logga">
+          <div id="footer_follow_insta_sec">
+            <img src="img/Instagrams_logga.jpg" alt="Instagram Logga">
             <p>@trygg_hansa</p>
-          </section>
+          </div>
         </a>
         <a href="https://www.facebook.com/TryggHansa/" class="footer_link">
-          <section id="footer_follow_facebook_sec">
-            <img src="img/Facebook logga.png" alt="Facebook Logga">
+          <div id="footer_follow_facebook_sec">
+            <img src="img/Facebook_logga.png" alt="Facebook Logga">
             <p>@Trygg-Hansa</p>
-          </section>
+          </div>
         </a>
         <a href="https://x.com/trygghansa" class="footer_link">
-          <section id="footer_follow_twitter_sec">
-            <img src="img/Svart X logga.jpg" alt="X (Twitter) Logga">
+          <div id="footer_follow_twitter_sec">
+            <img src="img/Svart_X_logga.jpg" alt="X (Twitter) Logga">
             <p>@trygghansa</p>
-          </section>
+          </div>
         </a>
       </section>
       

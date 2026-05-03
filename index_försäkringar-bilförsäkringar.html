@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +8,37 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
-  <title>Trygg-Hansa/Startsida</title>
+  <title>Trygg-Hansa/Försäkringar/Bilförsäkringar</title>
 
 </head>
 <body>
   <section id="wrapper">
     <header>
-      <img src="img/Trygg-Hansa logga - baby blue.jpg" alt="Trygg-Hansa loggan">
+      <img src="img/Ny_trygg_hansa_logga.jpg" alt="Trygg-Hansa loggan">
       <div id="header_content">
         <a href="index_försäkringar.html" class="header_link">
-          <section class="header_hyperlinks">
+          <div class="header_hyperlinks">
             <img src="img/Trygg-Hansa-ikon.png" alt="Trygg-Hansa Ikon">
             <p>Försäkringar</p>
-          </section>
+          </div>
         </a>
         <a href="index_kundservice.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/Telefon-ikon.png" alt="Telefon Ikon">
             <p>Kundservice</p>
-          </section>
+          </div>
         </a>
         <a href="index_startsida.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/home.png" alt="Hus Ikon">
             <p>Startsida</p>
-          </section>
+          </div>
         </a>
         <a href="index_logga_in.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/Profil-ikon.png" alt="Logga In Ikon">
             <p>Logga in</p>
-          </section>
+          </div>
         </a>
       </div>
     </header>
@@ -47,101 +47,103 @@
       <div id="shadow_behind_nav"></div>
       <div id="nav_content">
         <a href="index_startsida.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/home.png" alt="Hus Ikon">
             <p>Startsida</p>
-          </section>
+          </div>
         </a>
         <a href="index_logga_in.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Profil-ikon.png" alt="Profil Ikon">
             <p>Logga in</p>
-          </section>
+          </div>
         </a>
         <a href="index_kundservice.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Telefon-ikon.png" alt="Telefon Ikon">
             <p>Kundservice</p>
-          </section>
+          </div>
         </a>
         <a href="index_försäkringar.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Trygg-Hansa-ikon.png" alt="Trygg-Hansa Ikon">
             <p>Försäkringar</p>
-          </section>
+          </div>
         </a>
         <img id="nav_button" src="img/Pil.png" alt="Meny Icon">
       </div>
     </nav>
 
-    <section id="image_sec">
-      <img src="img/Gift_par_framför_bil.jpg" alt="Ett gift par som står vid en äldre bil">
-      <section id="image_text_sec">
-        <p><b>Bilförsäkringar</b></p>
-        <h3 id="mini_text_on_img">Dags att prissätta din trygghet på vägen</h3>
+    <main>
+      <div id="image_sec">
+        <img src="img/Gift_par_framför_bil.jpg" alt="Ett gift par som står vid en äldre bil">
+        <div id="image_text_sec">
+          <p><b>Bilförsäkringar</b></p>
+          <h3 id="mini_text_on_img">Dags att prissätta din trygghet på vägen</h3>
+        </div>
+      </div>
+      
+      <section id="insurance_sec">
+        <h3 id="mini_text_below_img">Dags att prissätta din trygghet på vägen</h3>
+        <p>Innan vi räknar ut ditt pris vill vi att du vet att vår bilförsäkring rankas högt för sin smidiga skadehantering. För att ge dig ett exakt pris baserat på just din bil och din körsträcka behöver vi några korta uppgifter. Kom ihåg att vi automatiskt kollar upp bilens historik så att du får rätt rekommendation direkt.</p>
+        <div id="insurance_info_sec">
+          <p><b>Detta behöver du:</b><br> Bilens registreringsnummer och din beräknade årliga körsträcka.</p>
+          <p><b>Tips:</b> Om du samlar flera försäkringar hos oss kan du få upp till <b>20%</b> rabatt.</p>
+        </div>
+        <div id="insurance_select_inkl_label_sec"> 
+          <label for="insurance_select"><b>Valmöjligheter:</b></label>
+          <div id="insurance_select_sec">
+            <select name="car_insurance" id="insurance_select">
+              <option value="" disabled selected>Välj försäkring...</option>
+              <option value="Bilförsäkring stor">Bilförsäkring stor</option>
+              <option value="Helförsäkring">Helförsäkring</option>
+              <option value="Halvförsäkring">Halvförsäkring</option>
+              <option value="Trafikförsäkring">Trafikförsäkring</option>
+              <option value="Märkesförsäkring">Märkesförsäkring</option>
+              <option value="Veteranbilsförsäkring">Veteranbilsförsäkring</option>
+              <option value="När du har krockat">När du har krockat</option>
+            </select>
+            <a href="index_logga_in.html"><p>Räkna ut ditt pris</p></a>
+          </div>
+        </div>
       </section>
-    </section>
-
-    <section id="insurance_sec">
-      <h3 id="mini_text_below_img">Dags att prissätta din trygghet på vägen</h3>
-      <p>Innan vi räknar ut ditt pris vill vi att du vet att vår bilförsäkring rankas högt för sin smidiga skadehantering. För att ge dig ett exakt pris baserat på just din bil och din körsträcka behöver vi några korta uppgifter. Kom ihåg att vi automatiskt kollar upp bilens historik så att du får rätt rekommendation direkt.</p>
-      <section id="insurance_info_sec">
-        <p><b>Detta behöver du:</b><br> Bilens registreringsnummer och din beräknade årliga körsträcka.</p></li>
-        <p><b>Tips:</b> Om du samlar flera försäkringar hos oss kan du få upp till <b>20%</b> rabatt.</p></li>
-      </section>
-      <section id="insurance_select_inkl_label_sec"> 
-        <label for="car_insurance"><p><b>Valmöjligheter:</b></p></label>
-        <section id="insurance_select_sec">
-          <select name="car_insurance" id="insurance_select">
-            <option value="" disabled selected>Välj försäkring...</option>
-            <option value="Bilförsäkring stor">Bilförsäkring stor</option>
-            <option value="Helförsäkring">Helförsäkring</option>
-            <option value="Halvförsäkring">Halvförsäkring</option>
-            <option value="Trafikförsäkring">Trafikförsäkring</option>
-            <option value="Märkesförsäkring">Märkesförsäkring</option>
-            <option value="Veteranbilsförsäkring">Veteranbilsförsäkring</option>
-            <option value="När du har krockat">När du har krockat</option>
-          </select>
-          <a href="index_logga_in.html"><p>Räkna ut ditt pris</p></a>
-        </section>
-      </section>
-    </section>
+    </main>
 
     <footer >
       <section id="footer_contact_sec">
-        <p>Kontakta oss:</p>
+        <h2>Kontakta oss:</h2>
         <a href="Tel:+46739950078" class="footer_link">
-          <section id="telefone_sec">
+          <div id="telefone_sec">
             <img src="img/Telefon-ikon.png" alt="Telefon ikon">
             <p>Tel: 077-111 11 10</p>
-          </section>
+          </div>
         </a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMjKKdfPtjXfkHBjxpcJhPcvPMSHxdSKRrQVPqQRntxMJMqgvTfVmmDQDGrpDQRTVhnXskV" class="footer_link">
-          <section id="mail_sec">
+          <div id="mail_sec">
             <img src="img/Mejl-ikon.jpg" alt="Brev ikon">
             <p>Mail: privat@trygghansa.se</p>
-          </section>
+          </div>
         </a>
       </section>
       <section id="footer_follow_sec">
-        <p>Följ oss:</p>
+        <h2>Följ oss:</h2>
         <a href="https://www.instagram.com/trygg_hansa/" class="footer_link">
-          <section id="footer_follow_insta_sec">
-            <img src="img/Instagrams logga.jpg" alt="Instagram Logga">
+          <div id="footer_follow_insta_sec">
+            <img src="img/Instagrams_logga.jpg" alt="Instagram Logga">
             <p>@trygg_hansa</p>
-          </section>
+          </div>
         </a>
         <a href="https://www.facebook.com/TryggHansa/" class="footer_link">
-          <section id="footer_follow_facebook_sec">
-            <img src="img/Facebook logga.png" alt="Facebook Logga">
+          <div id="footer_follow_facebook_sec">
+            <img src="img/Facebook_logga.png" alt="Facebook Logga">
             <p>@Trygg-Hansa</p>
-          </section>
+          </div>
         </a>
         <a href="https://x.com/trygghansa" class="footer_link">
-          <section id="footer_follow_twitter_sec">
-            <img src="img/Svart X logga.jpg" alt="X (Twitter) Logga">
+          <div id="footer_follow_twitter_sec">
+            <img src="img/Svart_X_logga.jpg" alt="X (Twitter) Logga">
             <p>@trygghansa</p>
-          </section>
+          </div>
         </a>
       </section>
       

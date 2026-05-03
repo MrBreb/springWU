@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +8,37 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
-  <title>Trygg-Hansa/Startsida</title>
+  <title>Trygg-Hansa/Försäkringar/Husförsäkringar</title>
 
 </head>
 <body>
   <section id="wrapper">
     <header>
-      <img src="img/Trygg-Hansa logga - baby blue.jpg" alt="Trygg-Hansa loggan">
+      <img src="img/Ny_trygg_hansa_logga.jpg" alt="Trygg-Hansa loggan">
       <div id="header_content">
         <a href="index_försäkringar.html" class="header_link">
-          <section class="header_hyperlinks">
+          <div class="header_hyperlinks">
             <img src="img/Trygg-Hansa-ikon.png" alt="Trygg-Hansa Ikon">
             <p>Försäkringar</p>
-          </section>
+          </div>
         </a>
         <a href="index_kundservice.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/Telefon-ikon.png" alt="Telefon Ikon">
             <p>Kundservice</p>
-          </section>
+          </div>
         </a>
         <a href="index_startsida.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/home.png" alt="Hus Ikon">
             <p>Startsida</p>
-          </section>
+          </div>
         </a>
         <a href="index_logga_in.html" class="header_link">
-          <section class="header_hyperlinks header_link_border_sec">
+          <div class="header_hyperlinks header_link_border_sec">
             <img src="img/Profil-ikon.png" alt="Logga In Ikon">
             <p>Logga in</p>
-          </section>
+          </div>
         </a>
       </div>
     </header>
@@ -47,100 +47,102 @@
       <div id="shadow_behind_nav"></div>
       <div id="nav_content">
         <a href="index_startsida.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/home.png" alt="Hus Ikon">
             <p>Startsida</p>
-          </section>
+          </div>
         </a>
         <a href="index_logga_in.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Profil-ikon.png" alt="Profil Ikon">
             <p>Logga in</p>
-          </section>
+          </div>
         </a>
         <a href="index_kundservice.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Telefon-ikon.png" alt="Telefon Ikon">
             <p>Kundservice</p>
-          </section>
+          </div>
         </a>
         <a href="index_försäkringar.html" class="nav_link">
-          <section class="nav_hyperlinks">
+          <div class="nav_hyperlinks">
             <img src="img/Trygg-Hansa-ikon.png" alt="Trygg-Hansa Ikon">
             <p>Försäkringar</p>
-          </section>
+          </div>
         </a>
         <img id="nav_button" src="img/Pil.png" alt="Meny Icon">
       </div>
     </nav>
 
-    <section id="image_sec">
-      <img src="img/Sommarhus.jpg" alt="En stor röd villa på en bondgård">
-      <section id="image_text_sec">
-        <p><b>Husförsäkringar</b></p>
-        <h3 id="mini_text_on_img">Skydda ditt hem med rätt omfattning</h3>
+    <main>
+      <div id="image_sec">
+        <img src="img/Sommarhus.jpg" alt="En stor röd villa på en bondgård">
+        <div id="image_text_sec">
+          <p><b>Husförsäkringar</b></p>
+          <h3 id="mini_text_on_img">Skydda ditt hem med rätt omfattning</h3>
+        </div>
+      </div>
+      
+      <section id="insurance_sec">
+        <h3 id="mini_text_below_img">Skydda ditt hem med rätt omfattning</h3>
+        <p>Varje hus är unikt, och därför anpassas priset efter din bostads specifika förutsättningar – allt från byggår till boyta. När du går vidare får du välja mellan olika nivåer av skydd, inklusive vårt mest omfattande paket för dig som vill ha extra trygghet mot t.ex. hussvamp eller läckage från våtutrymmen.</p>
+        <div id="insurance_info_sec">
+          <p><b>Detta behöver du:</b><br> Din adress och boyta i kvadratmeter.</p>
+          <p><b>Fakta:</b> Vi inkluderar alltid en ansvarsförsäkring som skyddar dig om du som privatperson skulle krävas på skadestånd.</p>
+        </div>
+        <div id="insurance_select_inkl_label_sec"> 
+          <label for="insurance_select"><b>Valmöjligheter:</b></label>
+          <div id="insurance_select_sec">
+            <select name="house_insurance" id="insurance_select">
+              <option value="" disabled selected>Välj försäkring...</option>
+              <option value="Villaförsäkring">Villaförsäkring</option>
+              <option value="Bostadsrättsförsäkring">Bostadsrättsförsäkring</option>
+              <option value="Hyresrättsförsäkring">Hyresrättsförsäkring</option>
+              <option value="Fritidshusförsäkring">Fritidshusförsäkring</option>
+              <option value="Studentförsäkring">Studentförsäkring</option>
+              <option value="Reseförsäkring">Reseförsäkring</option>
+            </select>
+            <a href="index_logga_in.html"><p>Räkna ut ditt pris</p></a>
+          </div>
+        </div>
       </section>
-    </section>
-
-    <section id="insurance_sec">
-      <h3 id="mini_text_below_img">Skydda ditt hem med rätt omfattning</h3>
-      <p>Varje hus är unikt, och därför anpassas priset efter din bostads specifika förutsättningar – allt från byggår till boyta. När du går vidare får du välja mellan olika nivåer av skydd, inklusive vårt mest omfattande paket för dig som vill ha extra trygghet mot t.ex. hussvamp eller läckage från våtutrymmen.</p>
-      <section id="insurance_info_sec">
-        <p><b>Detta behöver du:</b><br> Din adress och boyta i kvadratmeter.</p>
-        <p><b>Fakta:</b> Vi inkluderar alltid en ansvarsförsäkring som skyddar dig om du som privatperson skulle krävas på skadestånd.</p>
-      </section>
-      <section id="insurance_select_inkl_label_sec"> 
-        <label for="house_insurance"><p><b>Valmöjligheter:</b></p></label>
-        <section id="insurance_select_sec">
-          <select name="house_insurance" id="insurance_select">
-            <option value="" disabled selected>Välj försäkring...</option>
-            <option value="Villaförsäkring">Villaförsäkring</option>
-            <option value="Bostadsrättsförsäkring">Bostadsrättsförsäkring</option>
-            <option value="Hyresrättsförsäkring">Hyresrättsförsäkring</option>
-            <option value="Fritidshusförsäkring">Fritidshusförsäkring</option>
-            <option value="Studentförsäkring">Studentförsäkring</option>
-            <option value="Reseförsäkring">Reseförsäkring</option>
-          </select>
-          <a href="index_logga_in.html"><p>Räkna ut ditt pris</p></a>
-        </section>
-      </section>
-    </section>
+    </main>
 
     <footer >
       <section id="footer_contact_sec">
-        <p>Kontakta oss:</p>
+        <h2>Kontakta oss:</h2>
         <a href="Tel:+46739950078" class="footer_link">
-          <section id="telefone_sec">
+          <div id="telefone_sec">
             <img src="img/Telefon-ikon.png" alt="Telefon ikon">
             <p>Tel: 077-111 11 10</p>
-          </section>
+          </div>
         </a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMjKKdfPtjXfkHBjxpcJhPcvPMSHxdSKRrQVPqQRntxMJMqgvTfVmmDQDGrpDQRTVhnXskV" class="footer_link">
-          <section id="mail_sec">
+          <div id="mail_sec">
             <img src="img/Mejl-ikon.jpg" alt="Brev ikon">
             <p>Mail: privat@trygghansa.se</p>
-          </section>
+          </div>
         </a>
       </section>
       <section id="footer_follow_sec">
-        <p>Följ oss:</p>
+        <h2>Följ oss:</h2>
         <a href="https://www.instagram.com/trygg_hansa/" class="footer_link">
-          <section id="footer_follow_insta_sec">
-            <img src="img/Instagrams logga.jpg" alt="Instagram Logga">
+          <div id="footer_follow_insta_sec">
+            <img src="img/Instagrams_logga.jpg" alt="Instagram Logga">
             <p>@trygg_hansa</p>
-          </section>
+          </div>
         </a>
         <a href="https://www.facebook.com/TryggHansa/" class="footer_link">
-          <section id="footer_follow_facebook_sec">
-            <img src="img/Facebook logga.png" alt="Facebook Logga">
+          <div id="footer_follow_facebook_sec">
+            <img src="img/Facebook_logga.png" alt="Facebook Logga">
             <p>@Trygg-Hansa</p>
-          </section>
+          </div>
         </a>
         <a href="https://x.com/trygghansa" class="footer_link">
-          <section id="footer_follow_twitter_sec">
-            <img src="img/Svart X logga.jpg" alt="X (Twitter) Logga">
+          <div id="footer_follow_twitter_sec">
+            <img src="img/Svart_X_logga.jpg" alt="X (Twitter) Logga">
             <p>@trygghansa</p>
-          </section>
+          </div>
         </a>
       </section>
       

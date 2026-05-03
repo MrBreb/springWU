@@ -65,6 +65,12 @@
     #insurance_select_inkl_label_sec{
         text-align: center;
         border-top: dotted var(--background_color);
+        padding-top: 5vh;
+        margin-top: 3vh;
+    }
+
+    label{
+        font-family: var(--font_family);       
     }
 
     #insurance_select_sec{
@@ -72,6 +78,7 @@
         flex-direction: column;
         justify-content: space-around;
         padding-bottom: 10vh;
+        padding-top: 3vh;
     }
     #insurance_select{
         appearance: none;
@@ -198,7 +205,7 @@
     #insurance_select_inkl_label_sec label{
         font-size: 1.5em;
         text-align: center;
-        
+        font-family: var(--font_family);
     }
     #insurance_select_sec{
         display: flex;

@@ -51,7 +51,7 @@
         margin-left: 5vw;
     }
 
-    #header_content section{
+    #header_content div{
         height: 10vh;
         display: flex;
     }
@@ -95,7 +95,7 @@
         margin-right: 3vw;
     }
 
-    #header_content section{
+    #header_content div{
         height: 10vh;
         display: flex;
     }
